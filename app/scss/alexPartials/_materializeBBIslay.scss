@@ -1,0 +1,98 @@
+/*!
+ * MaterializeAmends BBIslay
+   OBJECTS AND MATERILIZE FONT ONLY - for general typographic styles see _typographyBase
+ */
+
+
+
+
+/*=======================*/
+/*Index page*/
+/*=======================*/
+
+.fixed-action-btn{
+	position: absolute;
+	right:20px;/*desired value*/
+	top: 15px;
+	height: 40%;
+}
+
+.whiteOutline {
+	background-color: transparent;
+	text-align: center;
+	border: 1px solid black;
+	
+		 &:hover {
+			background-color: transparent;
+			text-align: center;
+			border: 1px solid white;
+	}
+}
+
+
+.BBname {
+	//box-shadow: 0px 0px 6px 5px $copyBlack50;
+	width: 50%;
+	padding: 12px 15px 2px 15px;
+	border: 2px solid white;
+	align-content: center;
+	margin: 0 auto 30px auto;
+	min-width: 270px;
+	
+}
+
+
+/*To Top button*/
+
+.goTop {
+	margin-right: 20px; //see fixed-action-btn
+	position: sticky;
+	top: 50%;
+}
+
+.tooltipped {
+	background-color: $copyBlack20 !important;
+}
+//https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top
+
+
+/*=======================*/
+/*cards*/
+/*=======================*/
+
+.activator {
+	width: 100%;
+}
+
+.card {
+	border-radius: none;
+	border: 1px solid $copyBlack50;
+	box-shadow: 0 0 0 0 white !important;
+}
+
+.card .card-content {
+	padding: 16px;
+	height: 100%;
+}
+
+
+
+
+/*=======================*/
+/*Materialize Font icons*/
+/*=======================*/
+
+.iconBlue {
+	color: $blue;
+	font-size: 1em;
+	vertical-align: middle;
+	padding-right: 0.7rem;
+}
+
+.iconBlueNoPadding {
+	color: $blue;
+	font-size: 1em;
+	vertical-align: middle;
+	padding-right: 0rem;
+}
+

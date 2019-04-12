@@ -1,0 +1,92 @@
+/* Scss Document */
+
+//how many images we have
+$slides: 5;
+
+// how much we want each slide to show
+$time_per_slide: 4;
+
+// total time needed for full animation
+$total_animation_time: $time_per_slide * $slides;
+
+body{
+  background: white;
+}
+.smallGallery{
+  //margin:50px auto;
+  width:100%;
+  height: 100%;
+  overflow:hidden;
+  position:relative;
+
+}
+
+.photo{
+  position:absolute;
+  animation:round #{$total_animation_time}s infinite;
+  opacity:0;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);  
+}
+
+
+
+@include break(908) {
+
+
+		.smallGallery{
+		  //margin:50px auto;
+		  height: 298px;
+		  overflow:hidden;
+		  position:relative;
+
+		}
+
+
+		.photo{
+		  position:absolute;
+		  animation:round #{$total_animation_time}s infinite;
+		  opacity:0;
+		  height: 140%;
+		  top: 50%;
+		  left: 50%;
+		  transform: translateX(-50%) translateY(-50%);  
+	}
+
+
+}
+
+@include break(650) {
+
+		.photo{
+		  position:absolute;
+		  animation:round #{$total_animation_time}s infinite;
+		  opacity:0;
+		  height: 110%;
+		  top: 50%;
+		  left: 50%;
+		  transform: translateX(-50%) translateY(-50%);  
+	}
+
+
+}
+
+
+
+@keyframes round{   
+  25%{
+    opacity:1;
+  }
+  40%{
+    opacity:0;
+  }
+} 
+
+@for $index from 1 to $slides + 1{
+  img:nth-child(#{$index}){
+    animation-delay:#{$total_animation_time - $time_per_slide * $index}s
+  }
+}
+   

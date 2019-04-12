@@ -1,0 +1,24 @@
+/* Scss Document */
+
+/* Base data */
+@import "variables";/* var mixins first */
+@import "mixins"; /*functions*/
+@import "normalise_v8-0-1";
+@import "typographyBase";
+@import "materializeBBIslay";
+
+/* Structural */
+//@import "grid";
+//@import "slider";
+//@import "simpleGallery";
+//@import "weatherGoogleMap";
+//@import "footer";
+//@import "structure";
+//@import "button";
+//@import "navMenu";
+
+
+// With node-sass-import installed, install this script in the package.json
+//"build-css": "node-sass app/scss/materializeXxxxxx.scss app/css/materializeGOMA.css --importer node_modules/node-sass-import"
+// Where the app/scss/materializeXxxxxx.scss is a partial complier. Run as a script
+// to run this as a build $ npm run build-css

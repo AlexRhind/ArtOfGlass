@@ -1,0 +1,211 @@
+/* Scss Document */
+
+html {height: 100%}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: $primaryFont; ///Google FONT - Barlow 400 regular, 400i reg italic 700 bold, 900 black
+	
+	widows: inherit;/*kern and ligature set*/
+	//hanging-punctuation: none || [ first || [ force-end | allow-end ] || last ];
+	font-kerning: normal;
+	text-rendering: optimizeLegibility;
+	font-variant-ligatures: common-ligatures; //DO NOT RUN with Materialise icon font
+}
+
+
+li, ul {
+	font-size: 1rem;
+	margin: 0.3rem 0;
+	text-decoration: none;
+}
+
+label {
+	font-size: 1rem;
+	margin: 0.3rem 0 0.3rem 10px; //10px left indent for labels
+}
+
+
+//this sets the default lineheight at 1.7. Enter an optional 5th value if it needs changed
+@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.7) {
+	font-family: $secondaryFont;
+	font-size: 1rem;
+	font-weight: 400;
+	//font-stretch: normal;
+	//font-variant: common-ligatures tabular-nums||proportional-nums;
+	//text-transform: initial;
+	//letter-spacing: -0.1px;
+	//word-spacing: 0.02em;
+	line-height: $lineHeight; //set 1.8
+	color: $copyBlack;
+	text-align: left;
+	margin-top: $m-top;
+	margin-right: $m-right;
+	margin-bottom: $m-bottom;
+	margin-left: $m-left;
+}
+
+p { @include p(0, 0, 0.75rem, 0)
+		}
+	
+p.weatherDescription { @include p(0, 0, 0, 0, 1.8rem);//line-height 1
+		text-align: center;
+		text-transform: initial;
+
+		}
+	
+p.whiteBody { @include p(0, 0, 0.4rem, 0);
+		color: white;
+		}
+
+
+//this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
+@mixin h1($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.35) {
+	font-family: $primaryFont;
+	font-size: 1.8rem;
+	font-weight: 400;
+	//font-stretch: normal;
+	//font-variant: normal;
+	//letter-spacing: -0.1px;
+	//word-spacing: 0.02em;
+	line-height: $lineHeight; //set 1.8
+	color: $copyBlack;
+	text-align: center;
+	margin-top: $m-top;
+	margin-right: $m-right;
+	margin-bottom: $m-bottom;
+	margin-left: $m-left;
+}
+
+h1 {
+	@include h1(0, 0, 0, 0)
+}
+
+
+.h1{
+	@include h1(0, 0, 0, 0, 1.8);
+	color: $blue;
+}
+
+.mainTemp{
+	@include h1(-0.5rem, 0, 0, 0, 1);
+	font-size: 2.2rem;
+	color: $blue;
+}
+
+
+
+
+@mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.4) {
+	font-family: $primaryFont;
+	font-size: 1.3rem;
+	font-weight: 400;
+	//font-stretch: normal;
+	//font-variant: normal;
+	//letter-spacing: -0.1px;
+	//word-spacing: 0.02em;
+	line-height: $lineHeight; //set 1.8
+	color: $blue;
+	text-align: left;
+	margin-top: $m-top;
+	margin-right: $m-right;
+	margin-bottom: $m-bottom;
+	margin-left: $m-left;
+}
+
+h2 {
+	@include h2(0, 0, 0.9rem, 0)
+}
+
+.weather {
+	@include h2(0, 0, 0rem, 0, 1);
+	text-align: center;
+}
+
+.h2 {
+	@include h2(0, 0, 10px, 0, 1.6)
+}
+
+
+
+
+@mixin h3($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 2) {
+	font-family: $secondaryFont;
+	font-size: 1.1rem;
+	font-weight: 700;
+	//font-stretch: normal;
+	//font-variant: normal;
+	//letter-spacing: -0.1px;
+	//word-spacing: 0.02em;
+	line-height: $lineHeight; //set 2
+	color: $copyBlack;
+	text-align: left;
+	margin-top: $m-top;
+	margin-right: $m-right;
+	margin-bottom: $m-bottom;
+	margin-left: $m-left;
+}
+
+h3 {
+	@include h3(0, 0, 0, 0)
+}
+
+.card-title.activator.h3, .card-title.h3 {
+	@include h3(0, 0, 0.75rem, 0, 1.5rem);
+}
+
+h3.weather {
+	@include h3(0, 0, 0.9rem, 0, 1);
+	text-align: center;
+}
+
+h3.footer {
+	@include h3(20px, 0, 0.5rem, 0);
+	color: white;
+}
+
+
+
+
+h4 {
+	font: 700 1.2rem/1.6rem $primaryFont;
+	color: $copyBlack;
+}
+
+
+
+
+
+/*=======================*/
+/*Links*/
+/*=======================*/
+
+a.blueLink { color: $blue !important;
+	
+		&:hover{
+		text-decoration: underline !important;
+		}
+}
+
+a.copyBlackLink { color: $copyBlack !important;
+				  font-family: $secondaryFont;
+	
+		&:hover{
+		text-decoration: underline !important;
+		}
+}
+
+	
+
+
+
+strong {font-weight: 700}
+
+.medium {font-weight: 700 !important}
+
+//.white {color: $white !important;} // don't use this with Materialise lib - set hard into css
+	
+.shadow {text-shadow: 3px 3px 6px $copyBlack50}
+
+

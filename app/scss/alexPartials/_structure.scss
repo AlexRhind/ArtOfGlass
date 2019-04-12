@@ -1,0 +1,61 @@
+/* Scss Document */
+
+//Uses flexbox unless stated
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100vh; //IE11 min-height bug clear
+  display: flex;
+  flex-direction: column;
+ 
+	&.indexImg {
+	background: url(../img/christelle-bourgeois-97314-unsplash.jpg)no-repeat top right fixed red; 
+  	background-size: cover;
+	}
+}
+
+nav {
+	background-color: $darkGreen;
+	border-left: 16px solid $blue;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+}
+
+
+main {
+	display: flex;
+}
+
+.content {
+	flex: 1 0 auto; // sets a child of the body element to expand to fill the v-height (main)
+	align-items: center;
+}
+
+.h1Display {//Main heading on index page
+			padding-left: 25px;
+			margin-left: 10%;
+			width: 40%;
+			border-left: 14px solid $blue;
+}
+
+
+footer {
+	flex-shrink: 0;  //no flex-shrink here. Nav also has no flex-shrink
+	
+}
+
+.footerSocial {
+	margin-left: 10%;
+}
+
+.flexColCenter { //centre child objects in a row
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
