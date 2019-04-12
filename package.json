@@ -1,0 +1,32 @@
+{
+  "name": "goma",
+  "version": "1.0.0",
+  "description": "GoMA GU2 project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexRhind/ArtOfGlass.git"
+  },
+  "author": "Alex Rhind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexRhind/ArtOfGlass/issues"
+  },
+  "homepage": "https://github.com/AlexRhind/ArtOfGlass#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-changed": "^3.2.0",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.11.0"
+  }
+}
