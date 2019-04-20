@@ -1,7 +1,7 @@
 {
   "name": "goma",
   "version": "1.0.0",
-  "description": "GoMA GU2 project",
+  "description": "GoMA Website",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -20,13 +20,13 @@
     "browser-sync": "^2.26.3",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-cached": "^1.1.1",
     "gulp-changed": "^3.2.0",
-    "gulp-clean-css": "^4.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-imagemin": "^5.0.3",
     "gulp-sass": "^4.0.2",
+    "gulp-sass-partials-imported": "^1.0.7",
     "gulp-sourcemaps": "^2.6.5",
-    "gulp-uglify": "^3.0.2",
-    "node-sass": "^4.11.0"
+    "gulp-uglify": "^3.0.2"
   }
 }

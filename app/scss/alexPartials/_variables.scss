@@ -1,6 +1,6 @@
 /* Scss Document */
 
-$blue: #518ED6;
+$blue: green;
 $blue50: rgba($blue, 0.5);
 $blue20: rgba($blue, 0.2);
 
@@ -8,7 +8,7 @@ $copyBlack: #29292A;
 $copyBlack50: rgba($copyBlack, 0.5);
 $copyBlack20: rgba($copyBlack, 0.2);
 
-$midGrey: #707070;
+$midGrey: #303030;
 $lightGrey: #DDDDDD;
 
 $white: #ffffff;
@@ -18,7 +18,7 @@ $white85: rgba($white, 0.85);
 
 
 
-$dottedBorder: 1px dotted $midGrey;
+$dottedBorder: 1px dotted $lightGrey;
 
 
 

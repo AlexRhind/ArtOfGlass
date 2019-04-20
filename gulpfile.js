@@ -1,75 +1,49 @@
-const {dest, parallel, series, src, task, watch} = require('gulp');
+const gulp = require('gulp');
 
 const imagemin = require('gulp-imagemin');
 const autoprefixer = require('gulp-autoprefixer');
-const changed = require('gulp-changed');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
 const sourcemaps = require('gulp-sourcemaps');
+const sass = require('gulp-sass');
+//const uglify = require('gulp-uglify');
 
 const browserSync = require('browser-sync').create();
 reload = browserSync.reload;
 
-const sass = require('gulp-sass');
-const cleanCSS = require('gulp-clean-css'); //{compatibility: "ie8"}
-
-// ----Top level functions-----
-    //gulp.tasks - define tasks
-    //gulp.src - define the source
-    //gulp.dest - define the destination
-    //gulp.watch - watch files and folders for changes
-
-//https://www.pixemweb.com/blog/gulp-4-0-0-with-nodejs-imagemin-browsersync-sass-sourcemaps-cleancss-more/i
-//https://www.youtube.com/watch?v=tTrPLQ6nOX8
 
 function css(){
-    return src('app/scss/components/**/*.scss')
+  return gulp.src('./app/scss/**/*.scss')
           .pipe(sourcemaps.init({loadMaps: true}))
           .pipe(sass({
-              outputStyle: 'expanded'
-              }).on('error', sass.logError))
-          .pipe(autoprefixer('last 2 versions'))
+              outputStyle: 'extended' //use compressed here for final output
+              })).on('error', sass.logError)
+          .pipe(autoprefixer({
+              browsers: ['last 2 versions'],
+              cascade: false
+              }))
           .pipe(sourcemaps.write())
-          .pipe(dest('app/scss/components/runSASS'));
+          .pipe(gulp.dest('app/css'))
 }
 
-function concatCSS(){
-    return src('app/scss/components/runSASS')
-          .pipe(sourcemaps.init({
-              loadMaps: true,
-              largeFile: true}))
-          .pipe(concat('style.min.css'))
-          .pipe(cleanCSS())
-          .pipe(sourcemaps.write('./maps/'))
-          .pipe(gulp.dest('app/dist/css'))
-}
 
 function imageMin(){
-    return src('app/img')
+    return gulp.src('app/img')
+          //gulp-changed compares source files to existing, only updates new eds 
           .pipe(changed('app/img'))
           .pipe(imagemin([
-              imagemin.gifsicle({interlaced: true}),
-              imagemin.jpegtran({progressive: true}),
-              imagemin.optipng({optimizationLevel: 5})
+              imagemin.gifsicle({interlaced:true}),
+              imagemin.jpegtran({progressive:true}),
+              imagemin.optipng({optimizationLevel:5})
           ]))
-          .pipe(dest('dist/img'))
+          .pipe(gulp.dest('app/img/imgMin'))
 }
 
 function watch(){
-    browserSync.init({
-              open: 'external',
-              proxy: 'http://localhost',
-              port: 8890
-          });
-          watch('app/scss/components/**/*.scss', series(css, concatCSS));
-          watch('app/img', imageMin);
-          watch('app/*.html').on('change', browserSync.reload);
+    browserSync.init({server:{baseDir:'app'}});
+        gulp.watch(['app/scss/components','app/scss/alexPartials'], css);
+        gulp.watch('app/img', imagemin);
+        gulp.watch('app/**/*.html').on('change', browserSync.reload);
 }
 
-exports.css = css;
-exports.concatCSS = concatCSS;
-exports.imageMin = imageMin;
-exports.watch = watch;
-
-let build = parallel(watch);
-          task('default', build);
+module.exports.css = css;
+module.exports.imageMin = imageMin;
+module.exports.watch = watch;
