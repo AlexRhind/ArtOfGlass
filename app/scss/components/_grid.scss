@@ -18,20 +18,20 @@
   margin-right: (-1 * $gutter-width / 2);
 }
 
-.section {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-
-  &.no-pad {
-    padding: 0;
-  }
-  &.no-pad-bot {
-    padding-bottom: 0;
-  }
-  &.no-pad-top {
-    padding-top: 0;
-  }
-}
+// .section {
+//   padding-top: 1rem;
+//   padding-bottom: 1rem;
+//
+//   &.no-pad {
+//     padding: 0;
+//   }
+//   &.no-pad-bot {
+//     padding-bottom: 0;
+//   }
+//   &.no-pad-top {
+//     padding-top: 0;
+//   }
+//}
 
 
 // Mixins to eliminate code repitition

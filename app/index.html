@@ -1,172 +1,280 @@
+<!--==========================
+***** GoMA index Page *****
+=========================== -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-  <title>GoMA new name </title>
+  <title>GoMA Art of Glass Exhibition</title>
 
-  <!-- Fonts Barlow semi-cond (body) cond (headings) Regular 400 and semi-bold 600-->
+  <!-- Google Material Icons, Fonts Barlow semi-cond (body) cond (headings) Regular 400 and semi-bold 600-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,600,600i" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,600,600i" rel="stylesheet">
   <!-- font-family: 'Barlow Condensed' OR 'Barlow Semi Condensed', sans-serif;-->
 
-  <!-- Compiled and minified CSS, GoMA CSS -->
+  <!-- Compiled and minified CSS, GoMA CSS - some adjustments are made to $primaryColor etc to framework -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link href="css/materializeGOMA.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
-  <!-- Kill parallax CSS on integration with GOMA _partials -->
-  <link href="css/parallaxStyle.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <!-- Override for Materialize framework -->
+  <link href="css/alex.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 
 </head>
 
 
-
 <body>
+<!--==========================
+***** Navigation *****
+=========================== -->
 
-  <nav class="black" role="navigation">
-    <div class="nav-wrapper container">
-      <a id="logo-container" href="#" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
+<nav class="grey" role="navigation">
 
-      <ul id="nav-mobile" class="sidenav">
-        <li><a href="#">Navbar Link</a></li>
-      </ul>
-      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+  <div class="nav-wrapper">
+
+    <a id="logo-container" class="brand-logo"><img src="img/GlasgowLife.png" alt="#######" style= " height: 65px "></a>
+    <ul class="right hide-on-med-and-down">
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
+      <li><a href="c#">Link3</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav">
+      <li><a href="#">Link1</a></li>
+      <li><a href="#">Link2</a></li>
+      <li><a href="c#">Link3</a></li>
+    </ul>
+    <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+  <!-- end nav wrapper -->
+  </div>
+
+</nav>
+
+
+<main>
+
+  <!--==========================
+  ***** Opening intro *****
+  =========================== -->
+
+<div class="_parallax-container">
+
+    <div class="grid-one">
+        <div class="box3 center">
+          <img src="img/ArtOfGlassWhite.svg" style="width:200px">
+          <h3 class="center">An exhibition of glass past & present 10 September to 15 December 2020</h3>
+          <h3 class="center">Five exciting international glass artists Artist-led workshops | Exhibition | Meet the artists</h3>
+        </div>
     </div>
-  </nav>
 
+    <div class="imgFill _parallax"><img src="img/artOfGlass.png" alt="Art of Glass"></div>
 
-
-  <div id="index-banner" class="parallax-container">
-    <div class="section no-pad-bot">
-      <div class="container">
-
-          <div class="grid3 right">
-            <img src="img/ArtOfGlassWhite.svg" style="width:200px">
-          </div>
-
-          <div class="row center">
-            <h5 class="header col s12 light">An exhibition of glass past & present 10 September to 15 December 2020</h5>
-            <h4>Five exciting international glass artists Artist-led workshops | Exhibition | Meet the artists</h4>
-          </div>
-
-      </div>
-    </div>
-    <div class="parallax"><img src="img/artOfGlass.png" alt="Art of Glass"></div>
+  <!-- end parallax container -->
   </div>
 
 
 
 
-  <div class="container">
+  <!--
+  Opening intro cols
+  -------------------------------->
+
+  <div class="#">
+    <div class="section turqBgrd">
+
+      <!--   Grid one   -->
+    <div class="grid-one">
+
+        <div class="box1">
+            <h3 class="#">Three millenia of glass art</h3>
+            <p class="light">Sed do etiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+        </div>
+
+        <div class="box2">
+            <h3 class="#">Four international artists</h3>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+        </div>
+
+        <div class="box3">
+            <h3 class="#">Make glass art at GoMA</h3>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+        </div>
+
+    </div>
+  </div>
+
+
+  <!--==========================
+  ***** Artist Gallery *****
+  =========================== -->
+
+
+<div class="slider" id="slider">
+<div class="slItems" >
+
+    <div class="slItem" style="background-image: url('img/artist1.png');">
+			<div class="#"><p>Artist here</p></div>
+		</div>
+
+    <div class="slItem" style="background-image: url('img/artist2.png');">
+			<div class="#"><p>Artist here</p></div>
+		</div>
+
+    <div class="slItem" style="background-image: url('img/artist3.png');">
+			<div class="#"><p>Artist here</p></div>
+		</div>
+
+    <div class="slItem" style="background-image: url('img/artist4.png');">
+			<div class="#"><p>Artist here</p></div>
+		</div>
+
+<!-- end slider items -->
+</div>
+
+<!-- end slider -->
+</div>
+
+
+
+  <!--
+  Artist Gallery cols
+  -------------------------------->
+
+<div class="section purpleBgrd">
+
+      <div class="grid-two">
+          <div class="box4 center">
+            <img src="img/ArtOfGlassWhite.svg">
+          </div>
+
+          <div class="box5">
+            <h3 class="#">Book a workshop</h3>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+          </div>
+
+          <div class="box6">
+            <h3 class="#">Meet the artists</h3>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+        </div>
+      </div>
+
+<!-- end section -->
+</div>
+
+
+  <!--==========================
+  ***** Museum Glass Art *****
+  =========================== -->
+
+
+  <div class="parallax-container">
+    <div class="section">
+        <div class="row center">
+          <h3 class="header col s12 light">Three Millenia of glass art | Egyptian and Roman glass art</h3>
+          <p>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        </div>
+    </div>
+    <div class="parallax"><img src="img/MoMAEgypt(c)PeterRoanFlickr.png" alt="xxxxxxx"></div>
+  </div>
+
+
+  <!--
+  Museum Glass Art cols
+  -------------------------------->
+
+
+  <div class="section smaltBlueBgrd">
+
+        <div class="grid-three">
+
+            <div class="box7">
+              <h3 class="#">Try Egyptian kohl makeup</h3>
+              <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            </div>
+
+            <div class="box8">
+              <h3 class="#">Meet the artists</h3>
+              <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+          </div>
+
+          <div class="box9">
+            <img src="img/ArtOfGlassWhite.svg">
+          </div>
+
+        <!-- end grid-three -->
+        </div>
+  <!-- end section -->
+  </div>
+
+
+
+  <!--==========================
+  ***** GoMA Friends *****
+  =========================== -->
+
+  <div class="parallax-container">
     <div class="section">
 
-      <!--   Icon Section   -->
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h5 class="center">Speeds up development</h5>
-
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h5 class="center">User Experience Focused</h5>
-
-            <p class="light">By utilizing elements and principles of Material Design, we were able to create a framework that incorporates components and animations that provide more feedback to users. Additionally, a single underlying responsive system across all platforms allow for a more unified user experience.</p>
-          </div>
-        </div>
-
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h5 class="center">Easy to work with</h5>
-
-            <p class="light">We have provided detailed documentation as well as specific code examples to help new users get started. We are also always open to feedback and can answer any questions a user may have about Materialize.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
         <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+          <h3 class="header col s12 light">GoMA Friends | Friends get priority booking and 10% off GoMA Shop and events</h3>
         </div>
-      </div>
-    </div>
-    <div class="parallax"><img src="img/artist1.png" alt="xxxxxxx"></div>
-  </div>
 
-  <div class="container">
-    <div class="section">
-
-      <div class="row">
-        <div class="col s12 center">
-          <h3><i class="mdi-content-send brown-text"></i></h3>
-          <h4>Contact Us</h4>
-          <p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
+        <div>
+          <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
         </div>
-      </div>
 
-    </div>
-  </div>
-
-
-  <div class="parallax-container valign-wrapper">
-    <div class="section no-pad-bot">
-      <div class="container">
-        <div class="row center">
-          <h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+        <div>
+          <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
         </div>
-      </div>
+
+    <!-- end section -->
     </div>
+
     <div class="parallax"><img src="img/goma2.png" alt="xxxxxxx"></div>
+
+  <!-- end parallel-container -->
   </div>
 
-  <footer class="page-footer blue-grey darken-3">
-    <div class="container">
-      <div class="row">
-        <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
-          <p class="grey-text text-lighten-4">xxxxxxxxx</p>
+  </main>
 
+  <!--==========================
+  ***** Footer *****
+  =========================== -->
 
-        </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+  <footer class="page-footer black">
+    <div class="grid-one ">
+
+        <div class="box1">
+          <h5 class="white-text">Contact GoMA</h5>
+          <p class="grey-text text-lighten-4">Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. exercitation ullamco laboris </p>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#"><i class="fab fa-facebook-square social facebook"></i>Facebook</a></li>
+            <li><a class="white-text" href="#"><i class="fab fa-instagram-square social instagram"></i>Instagram</a></li>
           </ul>
         </div>
-        <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
-          <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
-          </ul>
+
+        <div class="box2">
+          <h5 class="white-text">Find GoMA</h5>
+          <p class="grey-text text-lighten-4">Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. exercitation ullamco laboris </p>
         </div>
-      </div>
+
+        <!-- Google map -->
+        <div class="box3">
+          <div class="googleMap" id="googleMap"></div>
+        </div>
+
+    <!-- end grid-one -->
     </div>
-    <div class="footer-copyright">
-      <div class="container">
-      Made by <a class="brown-text text-lighten-3" href="http://www.alexrhind.co.uk">Rhino Design</a>
-      </div>
-    </div>
+
+
+        <div class="footer-copyright">
+          <p>Made by <a class="brown-text text-lighten-3" href="http://www.alexrhind.co.uk">RhinoOriginals</a></p>
+        </div>
+
   </footer>
 
 
@@ -177,7 +285,21 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   <script src="js/materialize.js"></script>
+  <script src="js/slider.js"></script>
   <script src="js/init.js"></script>
+  <script src="js/google-map.js"></script>
+
+  <script>
+  $(function(){
+    $('#slider').rbtSlider({
+      height: '70vh',
+      'dots': true,
+      'arrows': true,
+      'auto': 4
+    });
+  });
+  </script>
+
 
   </body>
 </html>

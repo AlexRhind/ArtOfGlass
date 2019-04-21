@@ -1,7 +1,7 @@
 /*
 For SASS on Gulp, addresses of any partials are contained in the SCSS partials
 @import instruction - set the SASS style to import from any folder inside the SCSS
-job folder, and 
+job folder, and
 
 
 */
@@ -24,7 +24,7 @@ job folder, and
 @import "components/icons-material-design";
 @import "components/grid";
 @import "components/navbar";
-@import "components/typography";
+//@import "components/typography";
 @import "components/transitions";
 @import "components/cards";
 @import "components/toast";

@@ -11,37 +11,43 @@ reload = browserSync.reload;
 
 
 function css(){
-  return gulp.src('./app/scss/**/*.scss')
+   return gulp.src('./app/scss/**/*.scss')
+          //sourcemaps allow browsers to map css origins
           .pipe(sourcemaps.init({loadMaps: true}))
           .pipe(sass({
-              outputStyle: 'extended' //use compressed here for final output
+              //use compressed here for final output
+              outputStyle: 'expanded'
               })).on('error', sass.logError)
+          //installs post-css prefixes for platforms under can-i-use
           .pipe(autoprefixer({
               browsers: ['last 2 versions'],
               cascade: false
               }))
           .pipe(sourcemaps.write())
           .pipe(gulp.dest('app/css'))
+          .pipe(browserSync.stream());
 }
 
 
 function imageMin(){
     return gulp.src('app/img')
-          //gulp-changed compares source files to existing, only updates new eds 
+          //gulp-changed compares source files to existing, only updates changes
           .pipe(changed('app/img'))
           .pipe(imagemin([
               imagemin.gifsicle({interlaced:true}),
               imagemin.jpegtran({progressive:true}),
               imagemin.optipng({optimizationLevel:5})
           ]))
+          //temporary imgMin folder - send to dist on completion
           .pipe(gulp.dest('app/img/imgMin'))
 }
 
 function watch(){
     browserSync.init({server:{baseDir:'app'}});
-        gulp.watch(['app/scss/components','app/scss/alexPartials'], css);
+        //watch looks at partials - full project path required unlike the generic compile!
+        gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
         gulp.watch('app/img', imagemin);
-        gulp.watch('app/**/*.html').on('change', browserSync.reload);
+        gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
 }
 
 module.exports.css = css;

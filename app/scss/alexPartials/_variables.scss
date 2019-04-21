@@ -1,29 +1,38 @@
 /* Scss Document */
 
-$blue: green;
-$blue50: rgba($blue, 0.5);
-$blue20: rgba($blue, 0.2);
-
 $copyBlack: #29292A;
 $copyBlack50: rgba($copyBlack, 0.5);
 $copyBlack20: rgba($copyBlack, 0.2);
 
-$midGrey: #303030;
-$lightGrey: #DDDDDD;
+$darkGrey: #151515;
+$midGrey: #707070;
+$lightGrey: #E4E4E4;
 
 $white: #ffffff;
 $white20: rgba($white, 0.20);
 $white50: rgba($white, 0.50);
 $white85: rgba($white, 0.85);
 
+$orange: #FFAA00;
+
+$turq: #2A9BA8;
+
+$purple: #6C52B2;
+
+$blue: #536DFE;
+
+$rose: #BC436C;
+
+$smaltBlue: #1D7FB4;
 
 
-$dottedBorder: 1px dotted $lightGrey;
+
+$dottedBorder: 1px dotted $midGrey;
 
 
 
-//Google FONT - Bitter 400 regular, 400i reg italic 700 bold
-$primaryFont: 'barlow Condensed', sans-serif;
+//Google FONT - Barlow Condensed regular, 400i reg italic 600 semi-bold
+$primaryFont: 'Barlow Condensed', sans-serif;
 
-//Google FONT - Lato 400 regular, 400i reg italic 700 bold
-$secondaryFont: 'Barlow semi condensed', sans-serif;
+//Google FONT - Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
+$secondaryFont: 'Barlow Semi Condensed', sans-serif;
