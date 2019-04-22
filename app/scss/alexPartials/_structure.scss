@@ -11,12 +11,13 @@ html, body {
 
 nav {
 	background-color: black;
-	opacity: 0.7;
+  opacity: 0.9;
 
 }
 
-a.brand-logo {
-  opacity: 1.0 !important;
+.brand-logo > img {
+  width: 400px;
+  margin: 20px 0 0 7%;
      }
 
 .imgFill {
@@ -92,8 +93,8 @@ footer {
 
 }
 
-.footerSocial {
-	margin-left: 10%;
+.footerURL {
+	margin-left: 7%;
 }
 
 // .flexColCenter { //centre child objects in a row

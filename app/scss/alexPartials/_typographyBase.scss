@@ -47,9 +47,16 @@ label {
 p { @include p(0, 0, 0.75rem, 0)
 		}
 
-p.copyBlack { @include p(0, 0, 0.4rem, 0);
-		color: $copyBlack;
+ul, ol, li { @include p(0, 0, 0.75rem, 0)
+		text-decoration: none;
 		}
+
+a { @include p(0, 0, 0.75rem, 0)
+		text-decoration: none;
+				&:hover{
+				text-decoration: underline !important;
+				}
+	}
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
