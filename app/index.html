@@ -13,7 +13,7 @@
   <!-- Google Material Icons, Fonts Barlow semi-cond (body) cond (headings) Regular 400 and semi-bold 600-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed:400,400i,600,600i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:400,400i,600,600i" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:300, 400,400i,600,600i" rel="stylesheet">
   <!-- font-family: 'Barlow Condensed' OR 'Barlow Semi Condensed', sans-serif;-->
 
   <!-- Compiled and minified CSS, GoMA CSS - some adjustments are made to $primaryColor etc to framework -->
@@ -30,12 +30,11 @@
 <!--==========================
 ***** Navigation *****
 =========================== -->
-
-<nav class="grey" role="navigation">
-
+<div class="navbar-fixed">
+  <nav role="navigation">
   <div class="nav-wrapper">
 
-    <a id="logo-container" class="brand-logo"><img src="img/GlasgowLife.png" alt="#######" style= " height: 65px "></a>
+    <a id="logo-container" class="brand-logo"><img src="img/GlasgowLife.png" alt="#######" style= " height: 65px; opacity:1.0;""></a>
     <ul class="right hide-on-med-and-down">
       <li><a href="#">Link1</a></li>
       <li><a href="#">Link2</a></li>
@@ -44,15 +43,16 @@
 
     <ul id="nav-mobile" class="sidenav">
       <li><a href="#">Link1</a></li>
-      <li><a href="#">Link2</a></li>
+      <li><a href="#">Link3</a></li>
       <li><a href="c#">Link3</a></li>
     </ul>
     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
   <!-- end nav wrapper -->
   </div>
-
-</nav>
+  </nav>
+<!-- end navbar-fixed -->
+</div>
 
 
 <main>
@@ -61,51 +61,49 @@
   ***** Opening intro *****
   =========================== -->
 
-<div class="_parallax-container">
+<section class="parallaxWrapper">
 
-    <div class="grid-one">
-        <div class="box3 center">
-          <img src="img/ArtOfGlassWhite.svg" style="width:200px">
-          <h3 class="center">An exhibition of glass past & present 10 September to 15 December 2020</h3>
-          <h3 class="center">Five exciting international glass artists Artist-led workshops | Exhibition | Meet the artists</h3>
+<div class="mcparallax" data-image-src="img/artOfGlass.png" data-speed="6" alt="Art of Glass"></div>
+
+    <div class="grid-start">
+        <div class="boxStart center">
+          <img src="img/ArtOfGlassWhite.svg" style="width:250px; margin-top:10%">
+          <h1 class="center"><strong>An exhibition of glass past & present</strong><br/>
+            10 September to 15 December 2020</h1>
+          <h2 class="center"><span class="orangeCopy">Five exciting International glass artists</span><br/>
+            Artist-led workshops <span class="orangeCopy">|</span> Exhibition <span class="orangeCopy">|</span> Meet the artists</h2>
         </div>
     </div>
 
-    <div class="imgFill _parallax"><img src="img/artOfGlass.png" alt="Art of Glass"></div>
-
-  <!-- end parallax container -->
-  </div>
-
-
-
+  <!-- end parallax wrapper -->
+</section>
 
   <!--
   Opening intro cols
   -------------------------------->
 
-  <div class="#">
-    <div class="section turqBgrd">
+  <section class="turqBgrd">
 
-      <!--   Grid one   -->
+    <!--   Grid one   -->
     <div class="grid-one">
 
         <div class="box1">
-            <h3 class="#">Three millenia of glass art</h3>
+            <h2 class="#">Three millenia of glass art</h2>
             <p class="light">Sed do etiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
         </div>
 
         <div class="box2">
-            <h3 class="#">Four international artists</h3>
+            <h2 class="#">Four international artists</h2>
             <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </div>
 
         <div class="box3">
-            <h3 class="#">Make glass art at GoMA</h3>
-            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
+            <h2 class="#">Make glass art at GoMA</h2>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitatiddon ullamco laboris .</p>
         </div>
 
     </div>
-  </div>
+  </section>
 
 
   <!--==========================
@@ -117,20 +115,44 @@
 <div class="slItems" >
 
     <div class="slItem" style="background-image: url('img/artist1.png');">
-			<div class="#"><p>Artist here</p></div>
-		</div>
+        <div class="galleryBanner">
+          <img src="img/galleryArtist1.png" alt="Alex Perez" class="galleryArtist">
+          <div class="galleryDiv">
+            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+          </div>
+        </div>
+        <!-- end_lItem -->
+    </div>
 
     <div class="slItem" style="background-image: url('img/artist2.png');">
-			<div class="#"><p>Artist here</p></div>
-		</div>
+        <div class="galleryBanner">
+          <img src="img/galleryArtist2.png" alt="Alex Perez" class="galleryArtist">
+          <div class="galleryDiv">
+            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+          </div>
+        </div>
+        <!-- end_lItem -->
+    </div>
 
     <div class="slItem" style="background-image: url('img/artist3.png');">
-			<div class="#"><p>Artist here</p></div>
-		</div>
+        <div class="galleryBanner">
+          <img src="img/galleryArtist3.png" alt="Alex Perez" class="galleryArtist">
+          <div class="galleryDiv">
+            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+          </div>
+        </div>
+        <!-- end_lItem -->
+    </div>
 
     <div class="slItem" style="background-image: url('img/artist4.png');">
-			<div class="#"><p>Artist here</p></div>
-		</div>
+        <div class="galleryBanner">
+          <img src="img/galleryArtist4.png" alt="Alex Perez" class="galleryArtist">
+          <div class="galleryDiv">
+            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+          </div>
+        </div>
+        <!-- end_lItem -->
+    </div>
 
 <!-- end slider items -->
 </div>
@@ -139,12 +161,12 @@
 </div>
 
 
-
   <!--
   Artist Gallery cols
   -------------------------------->
 
-<div class="section purpleBgrd">
+
+<section class="purpleBgrd">
 
       <div class="grid-two">
           <div class="box4 center">
@@ -152,18 +174,18 @@
           </div>
 
           <div class="box5">
-            <h3 class="#">Book a workshop</h3>
+            <h2 class="#">Book a workshop</h2>
             <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
           </div>
 
           <div class="box6">
-            <h3 class="#">Meet the artists</h3>
+            <h2 class="#">Meet the artists</h2>
             <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
         </div>
       </div>
 
 <!-- end section -->
-</div>
+</section>
 
 
   <!--==========================
@@ -171,15 +193,25 @@
   =========================== -->
 
 
-  <div class="parallax-container">
-    <div class="section">
-        <div class="row center">
-          <h3 class="header col s12 light">Three Millenia of glass art | Egyptian and Roman glass art</h3>
-          <p>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
-        </div>
-    </div>
-    <div class="parallax"><img src="img/MoMAEgypt(c)PeterRoanFlickr.png" alt="xxxxxxx"></div>
+  <section class="parallaxWrapper">
+
+  <div class="mcparallax" data-image-src="img/MoMAEgypt(c)PeterRoanFlickr.png" data-speed="3" alt="MoMA Egyptian glass"></div>
+
+  <div class="banner">
+      <h1 class="gallery"><strong>Three Millennia of glass art at GoMA</strong> <span class="orangeCopy">|</span> Egyptian and Roman glass art</h1>
+      <div class="shortWidth">
+      <h2 ">Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</h2>
+      </div>
+
   </div>
+
+  <!-- <div class="grid-#">
+      <div class="box#">
+        <h2>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</h2>
+  </div>
+ -->
+    <!-- end parallax wrapper -->
+  </section>
 
 
   <!--
@@ -187,17 +219,17 @@
   -------------------------------->
 
 
-  <div class="section smaltBlueBgrd">
+  <section class= "smaltBlueBgrd">
 
         <div class="grid-three">
 
             <div class="box7">
-              <h3 class="#">Try Egyptian kohl makeup</h3>
+              <h2 class="#">Try Egyptian kohl makeup</h2>
               <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
             </div>
 
             <div class="box8">
-              <h3 class="#">Meet the artists</h3>
+              <h2 class="#">Meet the artists</h2>
               <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris .</p>
           </div>
 
@@ -208,7 +240,7 @@
         <!-- end grid-three -->
         </div>
   <!-- end section -->
-  </div>
+  </section>
 
 
 
@@ -216,28 +248,31 @@
   ***** GoMA Friends *****
   =========================== -->
 
-  <div class="parallax-container">
-    <div class="section">
+  <section class="parallaxWrapper">
 
-        <div class="row center">
-          <h3 class="header col s12 light">GoMA Friends | Friends get priority booking and 10% off GoMA Shop and events</h3>
-        </div>
+  <div class="mcparallax" data-image-src="img/goma2.png" data-speed="3" alt="GoMA at Christmas"></div>
 
-        <div>
-          <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        </div>
-
-        <div>
-          <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        </div>
-
-    <!-- end section -->
-    </div>
-
-    <div class="parallax"><img src="img/goma2.png" alt="xxxxxxx"></div>
-
-  <!-- end parallel-container -->
+  <div class="banner">
+      <h1 class="friends">
+        <img src="img/GoMAStrap-White.png" alt="Friends of Glasgow Gallery of Modern Art"><br/>
+        Join GoMA Friends and get priority booking, 10% off at GoMA Shop and GoMA events</h1>
+        <div class="shortWidth">
+        <h2 ">Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</h2>
   </div>
+
+  </div>
+
+          <!-- <div>
+            <strong>GoMA Friends</strong><p class="#">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enbim ad mivnim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div>
+
+          <div>
+            <p class="#">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+          </div> -->
+
+
+    <!-- end parallax wrapper -->
+  </section>
 
   </main>
 
@@ -279,12 +314,13 @@
 
 
   <!-- Scripts -->
-  <!-- Compiled and minified JavaScript -->
+  <!-- Compiled and minified Materialize JavaScript -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- JQuery library -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
   <script src="js/materialize.js"></script>
+  <script src="js/mcparallax.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/init.js"></script>
   <script src="js/google-map.js"></script>

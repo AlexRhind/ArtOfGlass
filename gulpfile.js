@@ -46,7 +46,7 @@ function watch(){
     browserSync.init({server:{baseDir:'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
         gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
-        gulp.watch('app/img', imagemin);
+        gulp.watch('app/img', imageMin);
         gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
 }
 

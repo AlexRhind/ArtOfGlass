@@ -26,9 +26,9 @@ label {
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
-@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.65) {
+@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.5) {
 	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
-	font-size: 1.3rem;
+	font-size: 1.05rem;
 	font-weight: 400;
 	//font-stretch: normal;
 	//font-variant: common-ligatures tabular-nums||proportional-nums;
@@ -56,13 +56,13 @@ p.copyBlack { @include p(0, 0, 0.4rem, 0);
 @mixin h1($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.35) {
 	font-family: $primaryFont;
 	font-size: 1.8rem;
-	font-weight: 400;
+	font-weight: 300;
 	//font-stretch: normal;
 	//font-variant: normal;
 	//letter-spacing: -0.1px;
-	//word-spacing: 0.02em;
+	word-spacing: 0.02em;
 	line-height: $lineHeight; //set 1.8
-	color: $copyBlack;
+	color: white;
 	text-align: center;
 	margin-top: $m-top;
 	margin-right: $m-right;
@@ -71,23 +71,34 @@ p.copyBlack { @include p(0, 0, 0.4rem, 0);
 }
 
 h1 {
+	@include h1(1.5rem, 0, 0.2rem, 0)
+}
+
+h1.gallery {
 	@include h1(0, 0, 0, 0)
+	text-align: left;
+}
+
+h1.friends {
+	@include h1(0, 0, 0, 0, 1.8)
+	text-align: left;
+	color: $orange;
 }
 
 
 
 
 
-@mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.4) {
-	font-family: $primaryFont;
-	font-size: 1.3rem;
-	font-weight: 400;
+@mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.7) {
+	font-family: $primaryFont; //Barlow Condensed
+	font-size: 1.4rem;
+	font-weight: 400; //light
 	//font-stretch: normal;
 	//font-variant: normal;
-	//letter-spacing: -0.1px;
-	//word-spacing: 0.02em;
-	line-height: $lineHeight; //set 1.8
-	color: $blue;
+	//letter-spacing: -0.1rem;
+	//word-spacing: 0.02rem;
+	line-height: $lineHeight; //set 1.5
+	color: white;
 	text-align: left;
 	margin-top: $m-top;
 	margin-right: $m-right;
@@ -96,15 +107,15 @@ h1 {
 }
 
 h2 {
-	@include h2(0, 0, 0.9rem, 0)
+	@include h2(2rem, 0, 0.7rem, 0)
 }
 
 
 
 
-@mixin h3($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 2.1) {
+@mixin h3($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.7) {
 	font-family: $primaryFont;
-	font-size: 1.6rem;
+	font-size: 1.4rem;
 	font-weight: 400;
 	//font-stretch: normal;
 	//font-variant: normal;
@@ -160,5 +171,6 @@ a.copyBlackLink { color: $copyBlack !important;
 
 strong {font-weight: 700}
 .medium {font-weight: 700 !important}
+.orangeCopy{color: $orange}
 //.white {color: $white !important;} // don't use this with Materialise lib - set hard into css
 .shadow {text-shadow: 3px 3px 6px $copyBlack50}
