@@ -29,34 +29,44 @@ nav {
 
 }
 
-// .section {
-//
-//     &.turqBgrd {
-//       background-color: $turq;
-//     }
-//     &.purpleBgrd {
-//       background-color: $purple;
-//     }
-//     &.smaltBlueBgrd {
-//       background-color: $smaltBlue;
-//     }
+// Section fill colors
 
-
-section {
-
-    &.turqBgrd {
-      padding: 20px 0;
-      background-color: $turq;
-    }
-    &.purpleBgrd {
-      padding: 20px 0;
-      background-color: $purple;
-    }
-    &.smaltBlueBgrd {
-      padding: 20px 0;
-      background-color: $smaltBlue;
-    }
+@mixin sectionFill ($p-top, $p-left, $p-bottom, $p-right, $color){
+    padding-top: $p-top;
+    padding-left: $p-left;
+    padding-bottom: $p-bottom;
+    padding-right: $p-right;
+    background-color: $color;
 }
+
+.turqBgrd {
+  @include sectionFill (20px, 0, 20px, 0, $turq)
+}
+
+.turqBgrdNoPadding {
+  @include sectionFill (0, 0, 0, 0, $turq)
+}
+
+.purpleBgrd {
+  @include sectionFill (20px, 0, 20px, 0, $purple)
+}
+
+.purpleBgrdNoPadding {
+  @include sectionFill (0, 0, 0, 0, $purple)
+}
+
+.smaltBlueBgrd {
+  @include sectionFill (20px, 0, 20px, 0, $smaltBlue)
+}
+
+.smaltBlueBgrdNoPadding {
+  @include sectionFill (0, 0, 0, 0, $smaltBlue)
+}
+
+.roseBgrdNoPadding {
+  @include sectionFill (0, 0, 0, 0, $rose)
+}
+
 
 // Parallax windows and sections
 
@@ -76,6 +86,19 @@ section {
 .shortWidth{
       margin-right: 66%;
 }
+
+// Meet the Artist Pages
+// =====================
+
+.exampleArtist {
+  width: 23%;
+  min-width: 100px;
+  border-radius: 50%;
+  border: 2px solid white;
+  align-self: center;
+  margin-left: 7%;
+}
+
 
 
 main {

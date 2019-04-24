@@ -1,6 +1,7 @@
 const gulp = require('gulp');
 
 const imagemin = require('gulp-imagemin');
+const changed = require('gulp-changed');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
@@ -30,23 +31,23 @@ function css(){
 
 
 function imageMin(){
-    return gulp.src('app/img')
+    return gulp.src('app/img/*')
           //gulp-changed compares source files to existing, only updates changes
-          .pipe(changed('app/img'))
+          .pipe(changed('app/img/*'))
           .pipe(imagemin([
               imagemin.gifsicle({interlaced:true}),
               imagemin.jpegtran({progressive:true}),
               imagemin.optipng({optimizationLevel:5})
           ]))
           //temporary imgMin folder - send to dist on completion
-          .pipe(gulp.dest('app/img/imgMin'))
+          .pipe(gulp.dest('app/img/imgMin'));
 }
 
 function watch(){
     browserSync.init({server:{baseDir:'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
         gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
-        gulp.watch('app/img', imageMin);
+        gulp.watch('app/img/*', imageMin);
         gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
 }
 

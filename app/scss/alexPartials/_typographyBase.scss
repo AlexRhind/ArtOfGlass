@@ -47,6 +47,9 @@ label {
 p { @include p(0, 0, 0.75rem, 0)
 		}
 
+p.meetArtist2 { @include p(16rem, 0, 0.75rem, 0)
+		}
+
 ul, ol, li { @include p(0, 0, 0.75rem, 0)
 		text-decoration: none;
 		}
@@ -70,7 +73,7 @@ a { @include p(0, 0, 0.75rem, 0)
 	word-spacing: 0.02em;
 	line-height: $lineHeight; //set 1.8
 	color: white;
-	text-align: center;
+	text-align: left;
 	margin-top: $m-top;
 	margin-right: $m-right;
 	margin-bottom: $m-bottom;
@@ -86,11 +89,18 @@ h1.gallery {
 	text-align: left;
 }
 
+h1.meetArtisth1 {
+	@include h1(2rem, 0, 0, 0)
+	margin-left: 8%;
+
+}
+
 h1.friends {
 	@include h1(0, 0, 0, 0, 1.8)
 	text-align: left;
 	color: $orange;
 }
+
 
 
 
@@ -115,6 +125,12 @@ h1.friends {
 
 h2 {
 	@include h2(2rem, 0, 0.7rem, 0)
+}
+
+h2.meetArtisth2 {
+	@include h2(0.3rem, 0, 0.7rem, 0)
+	font-weight: 300;
+	margin-left: 8%;
 }
 
 
@@ -179,5 +195,6 @@ a.copyBlackLink { color: $copyBlack !important;
 strong {font-weight: 700}
 .medium {font-weight: 700 !important}
 .orangeCopy{color: $orange}
+.copyBlack{color: $copyBlack}
 //.white {color: $white !important;} // don't use this with Materialise lib - set hard into css
 .shadow {text-shadow: 3px 3px 6px $copyBlack50}
