@@ -44,13 +44,34 @@
 //    $primary-color-dark: darken($primary-color, 15%);
 //  }
 
+// From Alex Partials
+//------------------------------------------
+// $copyBlack: #29292A;
+//
+// $darkGrey: #151515;
+// $midGrey: #707070;
+// $lightGrey: #E4E4E4;
+//
+// $white: #ffffff;
+//
+// $orange: #FFAA00;
+//
+// $turq: #2A9BA8;
+//
+// $purple: #6C52B2;
+//
+// $blue: #536DFE;
+//
+// $rose: #BC436C;
+//
+// $smaltBlue: #1D7FB4;
 
 
 
 // 1. Colors
 // ==========================================================================
 
-$primary-color: color("blue", "lighten-2") !default;
+$primary-color: color("orange", "lighten-2") !default;
 $primary-color-light: lighten($primary-color, 15%) !default; // can run $primary-color-light: false !default;
 $primary-color-dark: darken($primary-color, 15%) !default;
 
@@ -73,11 +94,11 @@ $badge-height: 22px !default;
 // Shared styles
 $button-border: none !default;
 $button-background-focus: lighten($secondary-color, 4%) !default;
-$button-font-size: 14px !default;
+$button-font-size: 16px !default;
 $button-icon-font-size: 1.3rem !default;
-$button-height: 36px !default;
+$button-height: 30px !default;
 $button-padding: 0 16px !default;
-$button-radius: 2px !default;
+$button-radius: 1px !default;
 
 // Disabled styles
 $button-disabled-background: #DFDFDF !default;
@@ -89,7 +110,7 @@ $button-raised-background-hover: lighten($button-raised-background, 5%) !default
 $button-raised-color: #fff !default;
 
 // Large buttons
-$button-large-font-size: 15px !default;
+$button-large-font-size: 17px !default;
 $button-large-icon-font-size: 1.6rem !default;
 $button-large-height: $button-height * 1.5 !default;
 $button-floating-large-size: 56px !default;

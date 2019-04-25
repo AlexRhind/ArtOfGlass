@@ -26,16 +26,16 @@ label {
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
-@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.5) {
+@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.55) {
 	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
-	font-size: 1.05rem;
-	font-weight: 400;
+	font-size: 1.3rem;
+	font-weight: 300;
 	//font-stretch: normal;
 	//font-variant: common-ligatures tabular-nums||proportional-nums;
 	//text-transform: initial;
 	//letter-spacing: 0.08px;
 	//word-spacing: 0.02em;
-	line-height: $lineHeight; //set 1.65
+	line-height: $lineHeight;
 	color: white;
 	text-align: left;
 	margin-top: $m-top;
@@ -44,7 +44,7 @@ label {
 	margin-left: $m-left;
 }
 
-p { @include p(0, 0, 0.75rem, 0)
+p { @include p(0, 0, 1rem, 0)
 		}
 
 p.meetArtist2 { @include p(16rem, 0, 0.75rem, 0)
@@ -61,11 +61,22 @@ a { @include p(0, 0, 0.75rem, 0)
 				}
 	}
 
+a.btn-large { @include p(12px, 0, 0, 0)
+		text-decoration: none;
+		color: $copyBlack;
+		font-weight: 600;
+		letter-spacing: 0.9px;
+		padding: 7px 20px 22px 20px;
+				&:hover{
+				text-decoration: none !important;
+				}
+	}
+
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
 @mixin h1($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.35) {
 	font-family: $primaryFont;
-	font-size: 1.8rem;
+	font-size: 2rem;
 	font-weight: 300;
 	//font-stretch: normal;
 	//font-variant: normal;
@@ -85,8 +96,7 @@ h1 {
 }
 
 h1.gallery {
-	@include h1(0, 0, 0, 0)
-	text-align: left;
+	@include h1(4rem, 0, 1.3rem, 0)
 }
 
 h1.meetArtisth1 {
@@ -106,10 +116,10 @@ h1.friends {
 
 
 
-@mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.7) {
+@mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.45) {
 	font-family: $primaryFont; //Barlow Condensed
-	font-size: 1.4rem;
-	font-weight: 400; //light
+	font-size: 1.85rem;
+	font-weight: 300; //light
 	//font-stretch: normal;
 	//font-variant: normal;
 	//letter-spacing: -0.1rem;
@@ -124,11 +134,11 @@ h1.friends {
 }
 
 h2 {
-	@include h2(2rem, 0, 0.7rem, 0)
+	@include h2(2rem, 0, 1.2rem, 0)
 }
 
 h2.meetArtisth2 {
-	@include h2(0.3rem, 0, 0.7rem, 0)
+	@include h2(0.3rem, 0, 1.2rem, 0)
 	font-weight: 300;
 	margin-left: 8%;
 }
