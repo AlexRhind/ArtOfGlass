@@ -17,7 +17,7 @@ function css(){
           .pipe(sourcemaps.init({loadMaps: true}))
           .pipe(sass({
               //use compressed here for final output
-              outputStyle: 'expanded'
+              outputStyle: 'compressed'
               })).on('error', sass.logError)
           //installs post-css prefixes for platforms under can-i-use
           .pipe(autoprefixer({

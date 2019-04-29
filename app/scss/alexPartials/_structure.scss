@@ -2,17 +2,29 @@
 
 //This deals with elements in the HTML
 
-html, body {
+*, *:before, *:after {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+html {
+}
+
+
+body {
   height: 100vh;
   max-width: 100%;
-  overflow-x: hidden;
-  height:auto!important;
+  //overflow-x: hidden;
+  //height:auto!important;
+	//border: 1px dotted black;
+  margin: 0;
+  background-color: black;
 }
 
 nav {
 	background-color: black;
   opacity: 0.9;
-
+	border: 0px solid green;
 }
 
 .brand-logo > img {
@@ -91,12 +103,12 @@ nav {
 // =====================
 
 .exampleArtist {
-  width: 23%;
-  min-width: 100px;
-  border-radius: 50%;
-  border: 2px solid white;
-  align-self: center;
-  margin-left: 7%;
+		  width: 23%;
+		  min-width: 100px;
+		  border-radius: 50%;
+		  border: 2px solid white;
+		  align-self: center;
+		  margin-left: 7%;
 }
 
 
@@ -111,14 +123,7 @@ main {
 
 
 
-footer {
-	// flex-shrink: 0;  //no flex-shrink here. Nav also has no flex-shrink
 
-}
-
-.footerURL {
-	margin-left: 7%;
-}
 
 // .flexColCenter { //centre child objects in a row
 // 	display: flex;

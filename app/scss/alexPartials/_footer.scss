@@ -3,14 +3,15 @@
 
 footer {
 	background-color: $blue;
-	margin-top: 60px;
+	margin-top: 0px;
 	min-height: 170px;
+	padding-top: 60px;
 	flex-shrink: 0; //sets footer to bottom of 100vh
 }
 
-.flexContent {
-	flex: 1 0 auto;
-}
+// .flexContent {
+// 	flex: 1 0 auto;
+// }
 
 
 hr {
@@ -21,13 +22,18 @@ hr {
 
 a.simpleFooterLink {
 	color: $white;
-	
+
 	&:hover {
 		opacity: 0.7;
 		transition: 0.7s;
 		text-decoration: underline;
 	}
 }
+
+.footerURL {
+	margin-left: 7%;
+}
+
 
 
 .social {
@@ -39,26 +45,26 @@ a.simpleFooterLink {
 		color: #0F60BD;
 		transition: 0.7s;
 		}
-	
+
 	&.twitter:hover {
 		color: #21B5EE;
 		transition: 0.7s;
 		}
-	
+
 	&.whatsapp:hover {
 		color: #57A757;
 		transition: 0.7s;
 	}
-	
+
 	&.instagram:hover {
 		color: #E13D62;
 		transition: 0.7s;
 		}
-	
+
 	&.snapchat:hover {
 		color: #FFD400;
 		transition: 0.7s;
 
 		}
-	
+
 }

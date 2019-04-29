@@ -30,7 +30,7 @@ label {
 	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
 	font-size: 1.3rem;
 	font-weight: 300;
-	//font-stretch: normal;
+	font-stretch: normal;
 	//font-variant: common-ligatures tabular-nums||proportional-nums;
 	//text-transform: initial;
 	//letter-spacing: 0.08px;
@@ -61,12 +61,12 @@ a { @include p(0, 0, 0.75rem, 0)
 				}
 	}
 
-a.btn-large { @include p(12px, 0, 0, 0)
+a.btn-large { @include p(5px, 0, 0, 0)
 		text-decoration: none;
 		color: $copyBlack;
-		font-weight: 600;
+		font-weight: 400;
 		letter-spacing: 0.9px;
-		padding: 7px 20px 22px 20px;
+		padding: 8px 20px 0px 20px;
 				&:hover{
 				text-decoration: none !important;
 				}
@@ -95,9 +95,9 @@ h1 {
 	@include h1(1.5rem, 0, 0.2rem, 0)
 }
 
-h1.gallery {
-	@include h1(4rem, 0, 1.3rem, 0)
-}
+// h1.gallery {
+// 	@include h1(4rem, 0, 1.3rem, 0)
+// }
 
 h1.meetArtisth1 {
 	@include h1(2rem, 0, 0, 0)
@@ -135,6 +135,15 @@ h1.friends {
 
 h2 {
 	@include h2(2rem, 0, 1.2rem, 0)
+}
+
+h2.gallery {
+	@include h2(3rem, 0, 1.3rem, 0)
+}
+
+h2.form {
+	@include h2(1rem, 0, 1.3rem, 0)
+	text-align: center;
 }
 
 h2.meetArtisth2 {
@@ -183,7 +192,7 @@ h4 {
 
 
 /*=======================*/
-/*Links*/
+/*Links here*/
 /*=======================*/
 
 a.blueLink { color: $blue !important;

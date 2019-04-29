@@ -1,0 +1,45 @@
+/* Scss Document */
+
+.friendsHeader{
+    width: 35%;
+    background-color: black;
+    padding: 0 -2.0rem ;
+    border: 1px solid black;
+    margin: 0 auto;
+      > img {
+        //border: 1px solid red;
+        width: 43%;
+        display: block;
+        margin: 20px auto 0 auto;
+
+      }
+    }
+
+.formPageDiv {
+    width: 35%;
+    background-color: white;
+    padding: 1rem 2rem 0 2rem;
+    opacity: 0.90;
+    margin: 0 auto;
+}
+
+.linksOtherPages {
+    text-align: center;
+    //text-shadow: 2px 2px $copyBlack70;
+    width: 35%;
+    margin: 10px auto 10% auto;
+}
+
+.formPagesImg {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    //opacity: 0.50;
+}
+
+button.centred100 {
+    margin: 10px auto 0 auto;
+    width: 100%;
+    display: block;
+    color: $copyBlack;
+}

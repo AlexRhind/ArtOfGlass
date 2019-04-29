@@ -1,9 +1,9 @@
 <!--==========================
-***** Marky D Artist Page *****
+***** GoMA index Page *****
 =========================== -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -29,30 +29,44 @@
 </head>
 
 
-<body>
+<body class="formPagesImg" style="background-image: url(img/goma4.png);">
 <!--==========================
 ***** Navigation *****
-=========================== -->
-<div class="navbar-fixed">
-  <nav role="navigation">
-  <div class="nav-wrapper">
+===========================-->
 
-    <a href="index.html" id="logo-container" class="brand-logo"><img src="img/GoMAOnly-White.svg" alt="#######"></a>
+
+<div class="navbar-fixed">
+
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="meetArtist-1.html">meet 1</a></li>
+    <li><a href="meetArtist-2.html">meet 2</a></li>
+    <li><a href="meetArtist-3.html">meet 3</a></li>
+  </ul>
+
+  <nav role="navigation">
+    <div class="nav-wrapper">
+
+      <a href="index.html" class="brand-logo"><img src="img/GoMAOnly-White.svg" alt="Gallery of Modern Art"></a>
+
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
     <ul class="right hide-on-med-and-down">
+      <!-- Dropdown Trigger -->
+      <li><a class="dropdown-trigger" href="#" data-target="dropdown1">The Artists<i class="material-icons right">arrow_drop_down</i></a></li>
+      <li><a href="createAccount.html">Join GoMA Friends</a></li>
+      <li><a href="logIn.html">Log in Friends</a></li>
+    </ul>
+
+    <ul id="nav-mobile" class="sidenav">
       <li><a href="meetArtist-1.html">meet 1</a></li>
       <li><a href="meetArtist-2.html">meet 2</a></li>
       <li><a href="meetArtist-3.html">meet 3</a></li>
     </ul>
 
-    <ul id="nav-mobile" class="sidenav">
-      <li><a href="#">Link1</a></li>
-      <li><a href="#">Link3</a></li>
-      <li><a href="c#">Link3</a></li>
-    </ul>
     <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 
-  <!-- end nav wrapper -->
-  </div>
+    <!-- end nav wrapper -->
+    </div>
   </nav>
 <!-- end navbar-fixed -->
 </div>
@@ -61,91 +75,37 @@
 <main>
 
   <!--==========================
-  ***** Opening intro *****
+  ***** Create your account *****
   =========================== -->
 
-<section class="#">
+<div class="friendsHeader">
+  <img src="img/GoMAFriends-White.png" alt="" class="center">
+  <h2 class="form">Sign into your account</h2>
+</div>
 
-  <div class="grid-five">
+<div class="formPageDiv" >
 
-      <div class="box10"><img src="img/alex-iby-343837-unsplash.png" alt="Marky D"></div>
+  <form action="loginProcess.php" method="post">
+  <p><input type="text" name="username" required placeholder="Enter username"/></p>
+  <p><input type="password" name="password" required placeholder="Enter password"/></p>
+        <!--pattern="[A-Za-z0-9]{8}"-->
+	<br>
+	<button class="waves-effect waves-orange btn-large orange centred100" type="submit" name="submit" >Log in</button><!-- value="Register with us"  -->
+  </form>
 
-      <div class="bgrdImgGrid center"><img src="img/ArtOfGlassWhite.png" alt=""></div>
+    	<br><br>
 
-      <!-- holding box for gridMeetArtistTop -->
-      <div class="box11">
-        <h1 class="meetArtisth1 flow-text"><strong>Marky D</strong></h1>
-        <h2 class="meetArtisth2 flow-text">Join <strong>Marky D</strong> at glassmaking workshops 10 Oct to 6 Nov</h2>
-      </div>
-
-      <div class="box12">
-        <img src="img/galleryArtist1.png" alt="Alex Perez" class="exampleArtist">
-        <img src="img/galleryArtist4.png" alt="Alex Perez" class="exampleArtist">
-        <img src="img/galleryArtist2.png" alt="Alex Perez" class="exampleArtist">
-      </div>
-
-      <div class="box13">
-      <p class="#">Sed do eiuismod tempor inncidunt ut labore et doflore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-      </div>
+</div>
+<p class="linksOtherPages"><a href="createAccount.html">Want to join GoMA Friends? Click to register</a></p>
 
 
+</main>
 
-  </div>
-
-</section>
-
-  <!--
-  Gallery row
-  -------------------------------->
-
-  <section class="smaltBlueBgrdNoPadding">
-
-    <!--   Gallery row   -->
-    <div class="grid-one">
-
-      <div class="box15">
-          <h2 class="gallery">Workshops with Marky D</h2>
-          <p class="#">Sed do etiulismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis fnostrud exercitation ullamco laboris.<br/></p>
-          <a class="waves-effect waves-orange btn-large">BOOK NOW</a>
-
-      </div>
-
-        <!-- Artist gallery -->
-        <div class="boxMeetArtistGallery">
-
-          <div class="carousel carousel-slider">
-              <a href="#one!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/5" alt="">
-              </a>
-              <a href="#two!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/6" alt="">
-              </a>
-              <a href="#three!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/7" alt="">
-              </a>
-              <a href="#four!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/3" alt="">
-              </a>
-          </div>
-
-      <!-- end box2 -->
-      </div>
-
-      <!-- end grid-one -->
-      </div>
-
-  </section>
-
-  <div><p class="offer"><strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING |</p></div>
-
-
-  </main>
-
-  <!--==========================
+  <!--===========================
   ***** Footer *****
   =========================== -->
 
-  <footer class="page-footer black">
+<footer class="page-footer black">
     <div class="grid-one ">
 
         <div class="box1">
@@ -175,7 +135,7 @@
           <p>Handmade by <a class="brown-text text-lighten-3" href="http://www.alexrhind.co.uk">RhinoOriginals</a></p>
         </div>
 
-  </footer>
+</footer>
 
 
   <!-- Scripts -->
@@ -201,12 +161,7 @@
     });
   });
 
-
-    $('.carousel.carousel-slider').carousel(
-    {fullWidth: true,
-    indicators: true}
-  );
-
+  $(".dropdown-trigger").dropdown();
 
   </script>
 

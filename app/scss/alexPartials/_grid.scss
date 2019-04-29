@@ -3,15 +3,6 @@
 //Slider does not use grid
 //WindowHeight set in JS (smoothScroll)
 
-html {
-}
-
-body {
-	//max-width: 1400px;
-	margin: auto;
-	background-color: black;
-}
-//deleted Islay page instructions if 100vh is used
 
 
 .grid-start {
@@ -56,7 +47,7 @@ body {
 				grid-auto-rows: minmax(100px, auto);
 				grid-gap: $gridGap;
 				justify-items: stretch;
-				min-height: 25vh;
+				//min-height: 35vh;
 		}
 
 @mixin threeByFourGrid {
@@ -79,7 +70,6 @@ body {
 //Index page grid containers
 	.grid-one, .grid-two, .grid-three {
 		@include threeColGrid
-		position: relative;
 		}
 
 
