@@ -32,7 +32,8 @@
               //uses the name = value not the id of the object
                 username: {
                     required: true,
-                    minlength: 2
+                    minlength: 2,
+                    remote: "../checkUserName.php"
                 },
                 email: {
                     required: true,
@@ -51,8 +52,9 @@
           //Custom messages
           messages: {
               username: {
-                  required: "Please enter your name",
-                  minlength: "You sure you're named with one letter?"
+                  required: "Please enter a username",
+                  minlength: "Usernames must have a minimum of 2 characters",
+                  remote: "That username is in use. Would you like to <a href='login.php'></a>?"
               },
                   email: {
                   required: "Please enter your email address",
@@ -60,11 +62,11 @@
               },
               password: {
                   required: "Please enter a password",
-                  minlength: "Password must be at least 5 characters"
+                  minlength: "Password must be at least 4 characters"
               },
               repeatPassword: {
                   required: "Please confirm your password",
-                  minlength: "Password must be at least 5 characters",
+                  minlength: "Password must be at least 4 characters",
                   equalTo: "Passwords do not match"
               }
             }

@@ -32,7 +32,7 @@ if(isset($_POST['submit'])){
 								// </script>
 								//
 								$userNameRegAlready = "Sorry, that username is taken. Please choose another";
-								echo $userNameRegAlready;
+								echo 'var name = ' . json_encode($userNameRegAlready) . ';';
 								header("location: createAccount.php");
 
 				} else {
