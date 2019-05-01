@@ -8,7 +8,7 @@ if(isset($_POST['submit'])){
 
 	$userNameRegAlready = "";
 
-	if(!empty($_POST['username']) && !empty($_POST['nickname']) && !empty($_POST['password'])) {
+	if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
         if($_POST['password'] == $_POST['repeatPassword']){
 
@@ -27,28 +27,33 @@ if(isset($_POST['submit'])){
 								if ($found){
 
 								//message sent to creae account page to tell the user to try another username
+								// <script>
+								//
+								// </script>
+								//
 								$userNameRegAlready = "Sorry, that username is taken. Please choose another";
-								//header("location: createAccount.php");
+								echo $userNameRegAlready;
+								header("location: createAccount.php");
 
 				} else {
 
-				$retailer = $_POST['retailer'];
+				$privacy = $_POST['privacy'];
 
-				if(isset($retailer) && $retailer == "yes") {
-							$retailer = 1;
+				if(isset($privacy) && $privacy == "yes") {
+							$privacy = 1;
 						} else {
-							$retailer = 0;
+							$privacy = 0;
 						};
 
 				//username is not already registered and both passwords match - enter details into the DB
-			   $nickname = $_POST['nickname'];
+			   $email = $_POST['email'];
 			   $password = $_POST['password'];
 
 				//Send a hashed password into the DB (bind the hashed pwd)
 	           $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
-            	if($stmt = $conn->prepare("INSERT INTO admin.users (username, nickname, password, retailer) VALUES (?, ?, ?, ?)")){
-                $stmt->bind_param("sssi", $username, $nickname, $hashPassword, $retailer);
+            	if($stmt = $conn->prepare("INSERT INTO admin.users (username, email, password, privacy) VALUES (?, ?, ?, ?)")){
+                $stmt->bind_param("sssi", $username, $email, $hashPassword, $privacy);
                 $stmt->execute();
                 $stmt->close();
 

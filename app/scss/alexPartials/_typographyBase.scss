@@ -19,10 +19,13 @@ li, ul {
 	text-decoration: none;
 }
 
-label {
+label, .formError {
+	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
 	font-size: 1rem;
 	margin: 0.3rem 0 0.3rem 10px; //10px left indent for labels
 }
+
+//error label
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed

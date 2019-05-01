@@ -41,14 +41,15 @@
   <!-- JQuery library -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 
+  <script src="js/init.js"></script>
+  <script src="js/google-map.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/mcparallax.min.js"></script>
   <script src="js/slider.js"></script>
-  <script src="js/init.js"></script>
-  <script src="js/google-map.js"></script>
+  <script src="js/jquery.validate.min.js"></script>
 
 
-  <script>
+  <!-- <script>
 
   $(document).ready(function(){
     $('.modal').modal();
@@ -71,9 +72,10 @@
       indicators: true}
   );
 
+  $("form").validate();
 
+  </script> -->
 
-  </script>
 
 
   </body>
