@@ -6,12 +6,15 @@
     //$("form-create").validate();
     $(".dropdown-trigger").dropdown();
     $('.modal').modal();
+    $('.collapsible').collapsible();
+
 
 
     $('.carousel.carousel-slider').carousel(
         {fullWidth: true,
         indicators: true}
     );
+
 
     $(function(){
       $('#slider').rbtSlider({
@@ -29,7 +32,7 @@
         errorClass : 'formError',
 
         rules: {
-              //uses the name = value not the id of the object
+              //uses the name: value pair not id of the object
                 username: {
                     required: true,
                     minlength: 2,

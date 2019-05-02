@@ -30,7 +30,7 @@
 
 <body>
 
-  
+
 <!--==========================
 ***** Navigation *****
 ===========================-->
@@ -42,6 +42,7 @@
         <li><a href="meetArtist-1.php">meet 1</a></li>
         <li><a href="meetArtist-2.php">meet 2</a></li>
         <li><a href="meetArtist-3.php">meet 3</a></li>
+        <li><a href="workshops.php">workshops</a></li>
       </ul>
 
       <nav role="navigation">
@@ -62,6 +63,7 @@
           <li><a href="meetArtist-1.php">meet 1</a></li>
           <li><a href="meetArtist-2.php">meet 2</a></li>
           <li><a href="meetArtist-3.php">meet 3</a></li>
+          <li><a href="workshops.php">workshops</a></li>
         </ul>
 
         <!-- end nav wrapper -->

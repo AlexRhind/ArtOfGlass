@@ -33,7 +33,8 @@
             <input type="checkbox" class="filled-in" name="privacy" id="privacy" value="yes" >
             <span style = "color: #9e9e9e  !important; font-family: 'Barlow Semi Condensed', sans-serif  !important; font-size: 16px ;" >
               I agree to GoMA's <a href="#privacyModal" class="modal-trigger" style = "color: #9e9e9e; font-family: 'Barlow Semi Condensed', sans-serif; font-weight: 400; font-size: 16px; text-decoration: underline;" > Privacy Policy </a></span></label> <br>
-
+              <!-- <br>
+              <div class="g-recaptcha" data-sitekey="6LfwMSITAAAAAJuBLxbfhomV29hUWwGyUiNEwqSj"></div> -->
 
         <!-- Modal Structure -->
         <div id="privacyModal" class="modal">
@@ -45,19 +46,13 @@
             <a href="#!" class="modal-close waves-effect waves-grey btn-flat">Agree</a>
           </div>
         </div>
-
-
-        <!--pattern="[A-Za-z0-9]{8}"-->
     	<br>
     	<button class="waves-effect waves-orange btn-large orange centred100" type="submit" name="submit" >Register with us</button><!-- value="Register with us"  -->
-
-
-
     </form>
-
-<br><br>
-
+    <br>
+    <br>
 </div>
+
 <p class="linksOtherPages"><a href="login.php">Already Friends? Go to login</a></p>
 
 </main>

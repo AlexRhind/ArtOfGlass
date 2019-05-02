@@ -40,6 +40,8 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <!-- JQuery library -->
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <!-- Google Recapcha v3 -->
+  <!-- <script src="https://www.google.com/recaptcha/api.js" async defer></script> -->
 
   <script src="js/init.js"></script>
   <script src="js/google-map.js"></script>
