@@ -47,8 +47,17 @@ label, .formError {
 	margin-left: $m-left;
 }
 
-p { @include p(0, 0, 1rem, 0)
+p { @include p(0, 0, 1rem, 0 )
 		}
+
+p.workshopCollapsible { @include p(0, 0, 0rem, 0 )
+		}
+
+// p.workshopCollapsible p::before {
+// 		content: "CONTENT ";
+// 		//content: url(img/quotes.png) "\00A0 \00A0"; /*Use escaped unicode ch for content css \00A0 is en quad &nbsp*/
+// 		}
+
 
 p.meetArtist2 { @include p(16rem, 0, 0.75rem, 0)
 		}
@@ -64,7 +73,8 @@ a { @include p(0, 0, 0.75rem, 0)
 				}
 	}
 
-a.btn-large { @include p(5px, 0, 0, 0)
+a.btn-large {
+		@include p(5px, 0, 0, 0)
 		text-decoration: none;
 		color: $copyBlack;
 		font-weight: 400;

@@ -1,5 +1,8 @@
 /* Scss Document */
 
+// =============
+// Screen mixins
+// =============
 
 // For design-specific breakpoints
 // parse break point value (integer)
@@ -8,9 +11,6 @@
        @content;
    }
 }
-
-
-
 
 // Small devices
 // Small tablets and large smartphones (landscape view) $screen-sm-max: 576px;
@@ -45,6 +45,14 @@
 }
 
 
+@mixin sizeImgFromCenter {
+      //requires parent object relative =>
+      // overflow:hidden;
+      // position:relative;
 
-
-
+      position: absolute;
+      height: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+    }
