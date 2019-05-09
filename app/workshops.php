@@ -21,7 +21,8 @@
   </div>
 </section>
 
-<div><p class="offer"><strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING |</p></div>
+
+<div><p class="offer"><a href="createAccount.php"><strong>JOIN GoMA FRIENDS</strong></a> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <a href="createAccount.php"><strong>JOIN GoMA FRIENDS</strong></a> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING |</p></div>
 
   <!--
   Artist bookings
@@ -52,7 +53,13 @@
     </div>
 
     <div class="collapsible-body smaltBlueBRule">
-      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+      <h2>In conversation with Marky D</h2>
+      <p>Meet and greet Marky D 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
+      <h2>Glass workshops with Marky D</h2>
+      <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
     </div>
   <!-- end collapsible 1 -->
   </li>
@@ -77,7 +84,13 @@
     </div>
 
     <div class="collapsible-body roseBRule">
-      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+      <h2>In conversation with Morag Macleish</h2>
+      <p>Meet and greet Morag Macleish 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
+      <h2>Glass workshops with Marky D</h2>
+      <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
     </div>
   <!-- end collapsible 2 -->
   </li>
@@ -102,7 +115,41 @@
     </div>
 
     <div class="collapsible-body purpleBRule">
-      <p>xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+        <div class="">
+          <h2>In conversation with Alina Szapocznikow</h2>
+          <p>Meet and greet Alina Szapocznikow 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
+          <h2>Glass workshops with Marky D</h2>
+          <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+        </div>
+
+        <div class="">
+          <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
+            <p><strong>Places</strong><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            </p>
+
+            <p><strong>Adult</strong><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            </p>
+
+            <p><strong>Child</strong><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            </p>
+
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
+
+          </form>
+        <!-- end div.xxxxx -->
+        </div>
     </div>
   <!-- end collapsible 3 -->
   </li>

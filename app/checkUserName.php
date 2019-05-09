@@ -1,4 +1,6 @@
-<?php ob_start();
+<?php
+		//cross-origin resource sharing needs to be allowed 
+		header("Access-Control-Allow-Origin: http://localhost:8888");
 
 				require('includes/dbconx.php');
 				include('includes/errors.php');
@@ -19,13 +21,11 @@
     }
 
     if(mysqli_num_rows($found) == 0);
-		printf("Result has %d rows", $found);
-
     {
         echo 'true';//email is unique. not signed up before
-
     } else {
-
-        echo 'That username is in use. Would you like to <a href='login.php'></a>?';
+        echo 'false';//$found = 1 - username already registered
     }
 ?>
+
+ <!-- ob_start(); -->

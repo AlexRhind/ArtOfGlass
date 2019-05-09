@@ -12,7 +12,7 @@
 
 <div class="friendsHeader">
   <img src="img/GoMAFriends-White.png" alt="" class="center">
-  <h2 class="form">Create your account</h2>
+  <h2 class="form">Join GoMA Friends</h2>
 </div>
 
 <div class="formPageDiv" >
@@ -47,7 +47,7 @@
           </div>
         </div>
     	<br>
-    	<button class="waves-effect waves-orange btn-large orange centred100" type="submit" name="submit" >Register with us</button><!-- value="Register with us"  -->
+    	<button class="waves-effect waves-orange btn-large orange centred100" type="submit" name="submit" >Join us</button><!-- value="Register with us"  -->
     </form>
     <br>
     <br>

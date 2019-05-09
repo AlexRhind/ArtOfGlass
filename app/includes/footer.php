@@ -49,36 +49,7 @@
   <script src="js/mcparallax.min.js"></script>
   <script src="js/slider.js"></script>
   <script src="js/jquery.validate.min.js"></script>
-
-
-  <!-- <script>
-
-  $(document).ready(function(){
-    $('.modal').modal();
-    //other onload functions to come here
-  });
-
-  $(function(){
-    $('#slider').rbtSlider({
-      height: '70vh',
-      'dots': true,
-      'arrows': true,
-      'auto': 4
-    });
-  });
-
-  $(".dropdown-trigger").dropdown();
-
-  $('.carousel.carousel-slider').carousel(
-      {fullWidth: true,
-      indicators: true}
-  );
-
-  $("form").validate();
-
-  </script> -->
-
-
+  <script src="js/validate.js"></script>
 
   </body>
 </html>
