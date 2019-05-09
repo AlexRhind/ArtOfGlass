@@ -119,12 +119,26 @@
 									  margin-left: 0;
 							}
 
+		.box20Collapsible {
+			grid-column: 1/3;
+			grid-row: 1;
+			border: 0px solid grey ;
+		}
+
+
 
 		.box21Quote {
 			grid-column: 3/4;
 			grid-row: 1;
 			border: 0px solid red ;
 			align-self: center;
+		}
+
+		.box21Input {
+			grid-column: 3/4;
+			grid-row: 1;
+			border: 0px solid red;
+			margin-top: 55px;
 		}
 
 		.box21 {
@@ -188,11 +202,11 @@
 			grid-row: 1;
 			border: 0px solid red ;
 
-				> img {
-					width: 180px;
-					margin-top: 8px;
-					opacity: 0.5;
-				}
+					> img {
+						width: 180px;
+						margin-top: 8px;
+						opacity: 0.5;
+					}
 
 		}
 

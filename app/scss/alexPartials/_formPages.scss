@@ -61,3 +61,28 @@ button.centred100 {
     display: block;
     color: $copyBlack;
 }
+
+//No Materlialize
+input.noMat[type=text], input.noMat[type=number] {
+    background-color: white;
+    border: none;
+    border-bottom: 0px solid #9e9e9e;
+    border-radius: 0;
+    outline: none;
+    height: 2rem;
+    width: 5rem;
+    font-size: 1rem;
+    margin: 0 0 20px 0;
+    padding: 0;
+    box-shadow: none;
+    box-sizing: content-box;
+    transition: all 0.3s;
+        &.child {
+          margin-left: 2rem;
+        }
+  }
+
+//input:not([type]) - disabled
+//input.noMat[type=text], input.noMat[type=password], input.noMat[type=email], input.noMat[type=url],
+//input.noMat[type=time], input.noMat[type=date], input.noMat[type=datetime], input.noMat[type=datetime-local],
+//input.noMat[type=tel], input.noMat[type=number], input.noMat[type=search], textarea.materialize-textarea.noMat

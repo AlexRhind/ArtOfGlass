@@ -53,13 +53,41 @@
     </div>
 
     <div class="collapsible-body smaltBlueBRule">
-      <h2>In conversation with Marky D</h2>
-      <p>Meet and greet Marky D 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
-      <h2>Glass workshops with Marky D</h2>
-      <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+      <div class="grid-six">
+        <div class="box20Collapsible">
+          <h2>In conversation with Marky D</h2>
+          <p class="#">Meet the artist 1900 for 1930 Wed 10 October <span class="orangeCopy">£10 per person</span></p>
+
+          <h2 class="gallery">Glass workshops with Marky D</h2>
+          <p class="#">1400 Friday 12 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1400 Saturday 13 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Monday 16 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Wednesday 18 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+            <br>
+          <p class="orangeCopy">Please contact us if you wish to book for 6 or more people or for Schools. Workshops run for around 2 hours. Safety equipment provided.</p>
+        </div>
+
+        <div class="box21Input">
+          <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
+            <p class="#"><strong>Places</strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/></p>
+              <br>
+
+            <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            </p>
+
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
+
+          </form>
+        <!-- end div.box21Input -->
+        </div>
+        <!-- end div.grid-six -->
+        </div>
+
     </div>
   <!-- end collapsible 1 -->
   </li>
@@ -84,14 +112,40 @@
     </div>
 
     <div class="collapsible-body roseBRule">
-      <h2>In conversation with Morag Macleish</h2>
-      <p>Meet and greet Morag Macleish 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
-      <h2>Glass workshops with Marky D</h2>
-      <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-      <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-    </div>
+      <div class="grid-six">
+        <div class="box20Collapsible">
+          <h2>In conversation with Morag Macleish</h2>
+          <p class="#">Meet the artist 1900 for 1930 Wed 10 October <span class="orangeCopy">£10 per person</span></p>
+
+          <h2 class="gallery">Glass workshops with Morag Macleish</h2>
+          <p class="#">1400 Friday 12 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1400 Saturday 13 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Monday 16 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Wednesday 18 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+            <br>
+          <p class="orangeCopy">Please contact us if you wish to book for 6 or more people or for Schools. Workshops run for around 2 hours. Safety equipment provided.</p>
+        </div>
+
+        <div class="box21Input">
+          <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
+            <p class="#"><strong>Places</strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/></p>
+              <br>
+
+            <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            </p>
+
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
+
+          </form>
+        <!-- end div.box21Input -->
+        </div>
+        <!-- end div.grid-six -->
+        </div>
   <!-- end collapsible 2 -->
   </li>
 
@@ -115,40 +169,40 @@
     </div>
 
     <div class="collapsible-body purpleBRule">
-        <div class="">
+
+      <div class="grid-six">
+        <div class="box20Collapsible">
           <h2>In conversation with Alina Szapocznikow</h2>
-          <p>Meet and greet Alina Szapocznikow 1900 for 1930 Wed 10 Oct <span class="orangeCopy">£10 per person</span></p>
-          <h2>Glass workshops with Marky D</h2>
-          <p>1400 Friday 12 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-          <p>1400 Saturday 13 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-          <p>1000 Monday 16 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
-          <p>1000 Wednesday 18 Oct | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">Meet the artist 1900 for 1930 Wed 10 October <span class="orangeCopy">£10 per person</span></p>
+
+          <h2 class="gallery">Glass workshops with Alina Szapocznikow</h2>
+          <p class="#">1400 Friday 12 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1400 Saturday 13 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Monday 16 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+          <p class="#">1000 Wednesday 18 October | Maximum 16 places <span class="orangeCopy">£10 adult £5 child</span></p>
+            <br>
+          <p class="orangeCopy">Please contact us if you wish to book for 6 or more people or for Schools. Workshops run for around 2 hours. Safety equipment provided.</p>
         </div>
 
-        <div class="">
+        <div class="box21Input">
           <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
-            <p><strong>Places</strong><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            </p>
+            <p class="#"><strong>Places</strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/></p>
+              <br>
 
-            <p><strong>Adult</strong><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            </p>
-
-            <p><strong>Child</strong><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
-            <input name="xxxxxx" type="text" placeholder="Number of places"/><br>
+            <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="xxxxxx" type="text" placeholder="No. places"/><input class="noMat child" name="xxxxxx" type="text" placeholder="No. places"/><br>
             </p>
 
             <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
 
           </form>
-        <!-- end div.xxxxx -->
+        <!-- end div.box21Input -->
+        </div>
+        <!-- end div.grid-six -->
         </div>
     </div>
   <!-- end collapsible 3 -->
