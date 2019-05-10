@@ -6,8 +6,6 @@ include('includes/errors.php');
 
 if(isset($_POST['submit'])){
 
-	$userNameRegAlready = "";
-
 	if(!empty($_POST['username']) && !empty($_POST['email']) && !empty($_POST['password'])) {
 
         if($_POST['password'] == $_POST['repeatPassword']){
@@ -26,13 +24,6 @@ if(isset($_POST['submit'])){
 								//if the DB has found a match (it's not NULL)
 								if ($found){
 
-								//message sent to creae account page to tell the user to try another username
-								// <script>
-								//
-								// </script>
-								//
-								$userNameRegAlready = "Sorry, that username is taken. Please choose another";
-								echo 'var name = ' . json_encode($userNameRegAlready) . ';';
 								header("location: createAccount.php");
 
 				} else {

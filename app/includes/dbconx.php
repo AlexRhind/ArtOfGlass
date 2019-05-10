@@ -1,7 +1,7 @@
 <?php
 
 // connect to the database
-$conn=mysqli_connect("localhost","root","root","admin");
+$conn=mysqli_connect("localhost","root","root","adminGoMA");
 
 // show errors (remove this line if on a live site)
 // Check connection
