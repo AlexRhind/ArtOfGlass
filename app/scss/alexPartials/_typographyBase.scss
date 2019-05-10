@@ -73,6 +73,16 @@ a { @include p(0, 0, 0.75rem, 0)
 				}
 	}
 
+a.offerLink { @include p(0, 0, 0.75rem, 0)
+		text-decoration: underline;
+		color: $copyBlack;
+		font-size: 1.1rem;
+		font-weight: 600;
+				&:hover{
+				text-decoration: underline !important;
+				}
+	}
+
 a.btn-large {
 		@include p(5px, 0, 0, 0)
 		text-decoration: none;

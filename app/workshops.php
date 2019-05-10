@@ -21,8 +21,9 @@
   </div>
 </section>
 
-
-<div><p class="offer"><a href="createAccount.php"><strong>JOIN GoMA FRIENDS</strong></a> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <a href="createAccount.php"><strong>JOIN GoMA FRIENDS</strong></a> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING |</p></div>
+<?php
+    include("includes/offerBanner.php");
+?>
 
   <!--
   Artist bookings

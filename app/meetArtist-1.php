@@ -81,8 +81,9 @@
 
   </section>
 
-  <div><p class="offer"><strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING | <strong>GoMA FRIENDS</strong> GET 10% OFF EVENTS, SHOP & PRIORITY BOOKING |</p></div>
-
+  <?php
+      include("includes/offerBanner.php");
+  ?>
 
   </main>
 
