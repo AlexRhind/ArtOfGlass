@@ -29,9 +29,9 @@ label, .formError {
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
-@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.55) {
+@mixin p($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.5) {
 	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
-	font-size: 1.3rem;
+	font-size: 1.1rem;
 	font-weight: 300;
 	font-stretch: normal;
 	//font-variant: common-ligatures tabular-nums||proportional-nums;
@@ -48,6 +48,9 @@ label, .formError {
 }
 
 p { @include p(0, 0, 1rem, 0 )
+		}
+
+p.workshop { @include p(0, 0, 1.4rem, 0 )
 		}
 
 p.workshopCollapsible { @include p(0, 0, 0rem, 0 )
@@ -118,9 +121,9 @@ h1 {
 	@include h1(1.5rem, 0, 0.2rem, 0)
 }
 
-// h1.gallery {
-// 	@include h1(4rem, 0, 1.3rem, 0)
-// }
+h1.gallery {
+	@include h1(0rem, 0, 0rem, 0)
+}
 
 h1.meetArtisth1 {
 	@include h1(2rem, 0, 0, 0)
@@ -141,7 +144,7 @@ h1.friends {
 
 @mixin h2($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.45) {
 	font-family: $primaryFont; //Barlow Condensed
-	font-size: 1.85rem;
+	font-size: 1.6rem;
 	font-weight: 300; //light
 	//font-stretch: normal;
 	//font-variant: normal;
@@ -164,6 +167,10 @@ h2.gallery {
 	@include h2(3rem, 0, 1.3rem, 0)
 }
 
+h2.workshop {
+	@include h2(1rem, 0, 0rem, 0)
+}
+
 h2.form {
 	@include h2(1rem, 0, 1.3rem, 0)
 	text-align: center;
@@ -180,8 +187,8 @@ h2.meetArtisth2 {
 
 @mixin h3($m-top, $m-right, $m-bottom, $m-left, $lineHeight: 1.7) {
 	font-family: $primaryFont;
-	font-size: 1.4rem;
-	font-weight: 400;
+	font-size: 1.2rem;
+	font-weight: 600;
 	//font-stretch: normal;
 	//font-variant: normal;
 	//letter-spacing: -0.1px;
@@ -206,9 +213,9 @@ h3.footer {
 }
 
 i.orangeCopy {
-	margin-top: 20px;
+	padding-top: 0px;
 	font-size: 1.8rem;
-	vertical-align: sub;
+	vertical-align: middle;
 }
 
 

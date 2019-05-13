@@ -6,10 +6,13 @@
 
 <main>
 
-  <!--==========================
-  ***** Create your account *****
-  =========================== -->
+  <?php
+      include("includes/offerBanner.php");
+  ?>
 
+  <!--==========================
+  ***** Sign into your account *****
+  =========================== -->
 <div class="friendsHeader">
   <img src="img/GoMAFriends-White.png" alt="" class="center">
   <h2 class="form">Sign into your account</h2>
@@ -27,7 +30,7 @@
     	<br><br>
 </div>
 
-<p class="linksOtherPages"><a href="createAccount.html">Joining GoMA Friends? Go to register</a></p>
+<p class="linksOtherPages"><a href="createAccount.php">Joining GoMA Friends? Go to register</a></p>
 
 
 </main>

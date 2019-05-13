@@ -13,8 +13,8 @@
 
   <div class="bannerWorkshop">
       <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</span><br>
-      Artist-led workshops<br>
-      In conversation with the artist</strong> </h1>
+      <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
+      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
       <div>
       <h2>Book your place with our three international glass artists</h2>
       </div>
@@ -43,8 +43,10 @@
         <div class="box20">
             <img src="img/galleryArtist3.png" alt="Alex Perez" class="exampleArtistWorkshop">
               <div class="bookings">
-                <p><strong>Book 'In conversation' with Marky D</strong><i class="material-icons orangeCopy">play_arrow</i><br>1900 for 1930 10 October</p>
-                <p><strong>Book workshops with Marky D</strong><i class="material-icons orangeCopy">play_arrow</i><br>15 – 18 October</p>
+                <h2 class="workshop">Book 'In conversation' with Marky D<i class="material-icons orangeCopy">play_arrow</i></h2>
+                <p>1900 for 1930 10 October</p>
+                <h2 class="workshop">Book workshops with Marky D<i class="material-icons orangeCopy">play_arrow</i></h2>
+                <p class="workshop">15 – 18 October</p>
               </div>
           </div>
           <div class="box21Quote">
@@ -104,8 +106,10 @@
         <div class="box20">
             <img src="img/galleryArtist2.png" alt="Alex Perez" class="exampleArtistWorkshop">
               <div class="bookings">
-                <p><strong>Book 'In conversation' with Morag Macleish</strong><i class="material-icons orangeCopy">play_arrow</i><br>1900 for 1930 Fri 1 November</p>
-                <p><strong>Book workshops with Morag Macleish</strong><i class="material-icons orangeCopy">play_arrow</i><br> 5 – 13 November</p>
+                  <h2 class="workshop">Book 'In conversation' with Morag Macleish<i class="material-icons orangeCopy">play_arrow</i></h2>
+                  <p>1900 for 1930 Fri 1 November</p>
+                  <h2 class="workshop">Book workshops with Morag Macleish<i class="material-icons orangeCopy">play_arrow</i></h2>
+                  <p class="workshop">5 – 13 November</p>
               </div>
           </div>
           <div class="box21Quote">
@@ -163,8 +167,10 @@
         <div class="box20">
             <img src="img/galleryArtist1.png" alt="Alex Perez" class="exampleArtistWorkshop">
               <div class="bookings">
-                <p><strong>Book 'In conversation' with Alina Szapocznikow</strong><i class="material-icons orangeCopy">play_arrow</i><br>1900 for 1930 3 December</p>
-                <p><strong>Book workshops with Alina Szapocznikow</strong><i class="material-icons orangeCopy">play_arrow</i><br>11 - 17 December</p>
+                    <h2 class="workshop">Book 'In conversation' with Alina Szapocznikow<i class="material-icons orangeCopy">play_arrow</i></h2>
+                    <p>1900 for 1930 3 December</p>
+                    <h2 class="workshop">Book workshops with Alina Szapocznikow<i class="material-icons orangeCopy">play_arrow</i></h2>
+                    <p class="workshop">11 - 17 December</p>
               </div>
           </div>
           <div class="box21Quote">

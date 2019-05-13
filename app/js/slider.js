@@ -33,29 +33,32 @@ jQuery.fn.rbtSlider = function(opt){
                     }
                 });
             }
+
+            //'<i class="medium material-icons shadow">arrow-left</i>'
+            //'<i class="medium material-icons shadow">arrow-right</i>'
             if (opt.arrows) {
                 slider.append(
                     $('<div/>', {
                         class: 'ctrlPrev',
-                        html: '<i class="medium material-icons shadow">navigate_before</i>'
+                        html: "",
                     }).on('click', function(){
                         nav('prev');
                     })
                 ).append(
                     $('<div/>', {
                         class: 'ctrlNext',
-                        html: '<i class="medium material-icons shadow">navigate_next</i>'
+                        html: "",
                     }).on('click', function(){
                         nav('next');
                     })
                 );
             }
             if (opt.auto) {
-                var time = setInterval(function(){nav('next')}, opt.auto * 4000);
+                var time = setInterval(function(){nav('next')}, opt.auto * 2000);
                 slider.on('mouseover', function() {
                     clearInterval(time);
                 }).on('mouseleave', function() {
-                    time = setInterval(function(){nav('next')}, opt.auto * 4000);
+                    time = setInterval(function(){nav('next')}, opt.auto * 2000);
                 });
             }
 

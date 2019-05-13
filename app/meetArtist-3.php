@@ -49,29 +49,18 @@
     <div class="grid-one">
 
       <div class="box15">
-          <h1 class="gallery">Join workshops with Alina</h1>
-          <p class="#">Sed do etiuismod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis fnostrud exercitation ullamco laboris.<br/></p>
-          <a class="waves-effect waves-orange btn-large">BOOK NOW</a>
+        <h3 class="gallery">Friends Priority booking now open</h3>
+        <p class="#">Sed do etiulismod tempor incididunt ut labore et dolore magna aliqua. <br/></p>
+        <a href="login.php" class="waves-effect waves-orange btn-large">Friends BOOK NOW</a>
+        <br><br>
 
       </div>
 
-        <!-- Artist gallery -->
-        <div class="boxMeetArtistGallery">
 
-          <div class="carousel carousel-slider">
-              <a href="#one!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/5" alt="">
-              </a>
-              <a href="#two!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/6" alt="">
-              </a>
-              <a href="#three!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/7" alt="">
-              </a>
-              <a href="#four!" class="carousel-item">
-                <img src="http://lorempixel.com/800/400/nature/3" alt="">
-              </a>
-          </div>
+      <?php
+          include("includes/meetArtistGallery.php");
+      ?>
+
 
       <!-- end box2 -->
       </div>

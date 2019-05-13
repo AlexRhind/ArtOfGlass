@@ -17,7 +17,7 @@
         <div class="boxStart center">
           <img src="img/ArtOfGlassWhite.svg" style="width:250px;">
           <h1 class="center"><strong>An exhibition of glass past & present</strong><br/>
-            10 September to 15 December 2020</h1>
+            10 September to 15 December 2019</h1>
           <h2 class="center"><span class="orangeCopy">Three exciting International glass artists</span><br/>
             Artist-led workshops <span class="orangeCopy">|</span> Exhibition <span class="orangeCopy">|</span> Meet the artists</h2>
         </div>
@@ -41,7 +41,7 @@
         </div>
 
         <div class="box2">
-            <h2 class="#">Four international artists</h2>
+            <h2 class="#">Three international glass artists</h2>
             <p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </div>
 
@@ -64,9 +64,9 @@
 
     <div class="slItem" style="background-image: url('img/artist1.png');">
         <div class="galleryBanner">
-          <img src="img/galleryArtist1.png" alt="Alex Perez" class="galleryArtist">
+          <img src="img/galleryArtist3.png" alt="Alex Perez" class="galleryArtist">
           <div class="galleryDiv">
-            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+            <h1 class="gallery">Join <strong>MarkyD</strong> at glassmaking workshops 15&nbsp;–&nbsp;18&nbsp;October </h1>
           </div>
         </div>
         <!-- end_lItem -->
@@ -76,7 +76,7 @@
         <div class="galleryBanner">
           <img src="img/galleryArtist2.png" alt="Alex Perez" class="galleryArtist">
           <div class="galleryDiv">
-            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+            <h1 class="gallery">Join <strong>Morag Macleish</strong> at glassmaking workshops 5&nbsp;–&nbsp;13&nbsp;November </h1>
           </div>
         </div>
         <!-- end_lItem -->
@@ -84,19 +84,9 @@
 
     <div class="slItem" style="background-image: url('img/ari-he-317209-unsplash.png');">
         <div class="galleryBanner">
-          <img src="img/galleryArtist3.png" alt="Alex Perez" class="galleryArtist">
+          <img src="img/galleryArtist1.png" alt="Alex Perez" class="galleryArtist">
           <div class="galleryDiv">
-            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
-          </div>
-        </div>
-        <!-- end_lItem -->
-    </div>
-
-    <div class="slItem" style="background-image: url('img/artist4.png');">
-        <div class="galleryBanner">
-          <img src="img/galleryArtist4.png" alt="Alex Perez" class="galleryArtist">
-          <div class="galleryDiv">
-            <h1 class="gallery">Join <strong>Alex Perez</strong> at glassmaking workshops 10 Sep to 2 Oct </h1>
+            <h1 class="gallery">Join <strong>Alina Szapocznikow</strong> at glassmaking workshops 11&nbsp;-&nbsp;17&nbsp;December </h1>
           </div>
         </div>
         <!-- end_lItem -->
@@ -148,7 +138,8 @@
   <div class="banner">
       <h1 class="gallery"><strong>Three Millennia of glass art at GoMA</strong> <span class="orangeCopy">|</span> Egyptian and Roman glass art</h1>
       <div class="shortWidth">
-      <h2>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</h2>
+      <br>
+      <p>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
       </div>
 
   </div>
@@ -205,7 +196,8 @@
         <img src="img/GoMAStrap-White.png" alt="Friends of Glasgow Gallery of Modern Art"><br/>
         Join GoMA Friends and get priority booking, 10% off at GoMA Shop and GoMA events</h1>
         <div class="shortWidth">
-        <h2>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</h2>
+        <br>
+        <p>Radipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqqua. Ut ennim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
   </div>
 
   </div>
