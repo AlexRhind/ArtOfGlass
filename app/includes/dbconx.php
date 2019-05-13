@@ -1,6 +1,6 @@
 <?php
 
-// connect to the database
+// connect to the database on URL, username, userpassword, DBname
 $conn=mysqli_connect("localhost","root","root","adminGoMA");
 
 // show errors (remove this line if on a live site)
