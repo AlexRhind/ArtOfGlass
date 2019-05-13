@@ -131,7 +131,7 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="bookingProcessMoragMacleish.php" method="post" enctype="multipart/form-data">
+          <form class="" action="bookingProcessMorag.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
             <input class="noMat" name="Nov01" type="text" placeholder="No. places"/></p>
               <br>
@@ -191,15 +191,18 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
+          <form class="" action="bookingProcessAlina.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
-            <input class="noMat" name="Dec03" type="text" placeholder="No. places"/></p>
+            <input class="noMat" name="Dec03Meet" type="text" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
-            <input class="noMat" name="Dec11Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Dec11Adult" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Dec13Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Dec13Adult" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Dec17Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Dec17Adult" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec11Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Dec11Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec13Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Dec13Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec17Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Dec17Child" type="text" placeholder="No. places"/><br>
             </p>
 
             <input class="waves-effect waves-orange btn-large" type="submit" name="submitAlina" value="Book Alina" />
