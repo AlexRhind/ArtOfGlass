@@ -7,8 +7,13 @@ include('includes/errors.php');
 
 if (isset($_POST['submitMarkyD'])){
 
-							//$username = $_SESSION["username"];
-							$username = "Rhino";
+				// if(!isset($_SESSION["username"])) {
+				// 			$username = "Anonymous";
+				// }	else {
+				// 			$username = $_SESSION["username"];
+				// }
+							$username = $_SESSION["username"];
+							//$username = "Rhino";
 
 			if (!empty($_POST['Oct10Meet'])) {
 
@@ -39,12 +44,6 @@ if (isset($_POST['submitMarkyD'])){
 								$Oct15Child = $_POST['Oct15Child'];
 								$Oct15Adult = $_POST['Oct15Adult'];
 
-								// if(empty($_POST['Oct15Child'])) {
-								// 			$Oct15Child = 0;
-								// }	else {
-								// 			$Oct15Child = $_POST['Oct15Child'];
-								// }
-								//
 								// if(empty($_POST['Oct15Adult'])) {
 								// 			$Oct15Adult = 0;
 								// }	else {
@@ -124,3 +123,5 @@ if (isset($_POST['submitMarkyD'])){
 		}
 
 } //close isset button
+
+//SELECT * FROM `table` WHERE DATE(`timestamp`) = CURDATE()

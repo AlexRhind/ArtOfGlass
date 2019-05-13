@@ -13,7 +13,7 @@ if(isset($_POST['submit'])){
 						    // Test $username against the DB for exisiting username
 								$username = $_POST['username'];
 
-								$result = $conn->prepare("SELECT username FROM admin.users WHERE username = ?");
+								$result = $conn->prepare("SELECT username FROM adminGoMA.users WHERE username = ?");
 								$result->bind_param("s", $username);
 								$result->execute();
 
@@ -43,7 +43,7 @@ if(isset($_POST['submit'])){
 				//Send a hashed password into the DB (bind the hashed pwd)
 	           $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
-            	if($stmt = $conn->prepare("INSERT INTO admin.users (username, email, password, privacy) VALUES (?, ?, ?, ?)")){
+            	if($stmt = $conn->prepare("INSERT INTO adminGoMA.users (username, email, password, privacy) VALUES (?, ?, ?, ?)")){
                 $stmt->bind_param("sssi", $username, $email, $hashPassword, $privacy);
                 $stmt->execute();
                 $stmt->close();

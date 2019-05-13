@@ -12,7 +12,8 @@
   <section class="wrapperWorkshop" style="width: 100%; background-image: url(img/liam-martens.png)">
 
   <div class="bannerWorkshop">
-      <h1 class="gallery"><strong>Artist-led workshops<br>
+      <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</span><br>
+      Artist-led workshops<br>
       In conversation with the artist</strong> </h1>
       <div>
       <h2>Book your place with our three international glass artists</h2>
@@ -69,7 +70,7 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="bookingProcess.php" method="post" enctype="multipart/form-data">
+          <form class="" action="bookingProcessMarkyD.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
             <input class="noMat" name="Oct10Meet" type="text" placeholder="No. places"/></p>
               <br>
@@ -83,7 +84,7 @@
               <input class="noMat child" name="Oct18Child" type="text" placeholder="No. places"/><br>
             </p>
 
-            <input class="waves-effect waves-orange btn-large" type="submit" name="submitMarkyD" value="Book now" />
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submitMarkyD" value="Book MarkyD" />
 
           </form>
         <!-- end div.box21Input -->
@@ -130,18 +131,21 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="xxxxxxxxxxxxxxx.php" method="post" enctype="multipart/form-data">
+          <form class="" action="bookingProcessMoragMacleish.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
             <input class="noMat" name="Nov01" type="text" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
-            <input class="noMat" name="Nov05Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Nov05Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Nov06Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Nov06Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Nov13Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Nov13Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov05Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Nov05Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov06Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Nov06Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov13Adult" type="text" placeholder="No. places"/>
+              <input class="noMat child" name="Nov13Child" type="text" placeholder="No. places"/><br>
             </p>
 
-            <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submitMorag" value="Book Morag" />
 
           </form>
         <!-- end div.box21Input -->
@@ -198,7 +202,7 @@
             <input class="noMat" name="Dec17Adult" type="text" placeholder="No. places"/><input class="noMat child" name="Dec17Adult" type="text" placeholder="No. places"/><br>
             </p>
 
-            <input class="waves-effect waves-orange btn-large" type="submit" name="submit" value="Book now" />
+            <input class="waves-effect waves-orange btn-large" type="submit" name="submitAlina" value="Book Alina" />
 
           </form>
         <!-- end div.box21Input -->
