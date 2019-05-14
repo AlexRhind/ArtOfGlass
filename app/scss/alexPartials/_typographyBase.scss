@@ -56,6 +56,28 @@ p.workshop { @include p(0, 0, 1.4rem, 0 )
 p.workshopCollapsible { @include p(0, 0, 0rem, 0 )
 		}
 
+tr, td { @include p(0, 0, 1rem, 0 )
+		color: $copyBlack;
+		text-align: center;
+		//border: 0px solid red;
+
+		&.eventHeader {
+				text-align: left;
+		}
+}
+
+th { @include p(0, 0, 1rem, 0 )
+		color: $copyBlack;
+		font-weight: 600;
+		text-align: center;
+		
+		&.eventHeader {
+				text-align: left;
+		}
+
+}
+
+
 // p.workshopCollapsible p::before {
 // 		content: "CONTENT ";
 // 		//content: url(img/quotes.png) "\00A0 \00A0"; /*Use escaped unicode ch for content css \00A0 is en quad &nbsp*/

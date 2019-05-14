@@ -51,6 +51,10 @@ nav {
     background-color: $color;
 }
 
+.whiteBgrd {
+  @include sectionFill (20px, 7%, 50px, 7%, $white)
+}
+
 .turqBgrd {
   @include sectionFill (20px, 0, 20px, 0, $turq)
 }
@@ -69,6 +73,12 @@ nav {
 
 .smaltBlueBgrd {
   @include sectionFill (20px, 0, 20px, 0, $smaltBlue)
+}
+
+.smaltBlueBgrd_7pc {
+  @include sectionFill (20px, 7%, 20px, 7%, $smaltBlue)
+	min-height: 150px;
+
 }
 
 .smaltBlueBgrdNoPadding {
@@ -174,8 +184,23 @@ nav {
 	border-left: 15px solid $smaltBlue;
 }
 
+//Table for workshops
+.eventHeader {
+		width: 30%;
+		//border: 1px solid red;
+}
 
+.ticketType {
 
+}
+
+.deleteBooking {
+		align-content: center;
+}
+
+.tint {
+	background-color: $orange15;
+}
 
 main {
 	// display: flex;
