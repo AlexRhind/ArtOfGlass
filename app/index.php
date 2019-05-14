@@ -74,7 +74,7 @@
 
     <div class="slItem" style="background-image: url('img/artist2.png');">
         <div class="galleryBanner">
-          <img src="img/galleryArtist2.png" alt="Alex Perez" class="galleryArtist">
+          <img src="img/galleryArtist4.png" alt="Alex Perez" class="galleryArtist">
           <div class="galleryDiv">
             <h1 class="gallery">Join <strong>Morag Macleish</strong> at glassmaking workshops 5&nbsp;–&nbsp;13&nbsp;November </h1>
           </div>

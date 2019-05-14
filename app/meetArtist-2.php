@@ -13,7 +13,7 @@
 
   <div class="grid-five">
 
-      <div class="box10"><img src="img/tiko-giorgadze-525984-unsplash.png" alt="Marky D"></div>
+      <div class="box10"><img src="img/alex-perez-552245-unsplash.png" alt="Marky D"></div>
 
       <div class="bgrdImgGrid center"><img src="img/ArtOfGlassWhite.png" alt="Art of glass logo"></div>
       <div class="bgrdBaubles"><img src="img/BaublesBlack.png" alt="Glass baubles"></div>

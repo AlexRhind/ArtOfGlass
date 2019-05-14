@@ -9,7 +9,7 @@
   ***** Opening intro *****
   =========================== -->
 
-  <section class="wrapperWorkshop" style="width: 100%; background-image: url(img/liam-martens.png)">
+  <section class="wrapperWorkshop" style="width: 100%; background-image: url(img/glassForest1920.png)">
 
   <div class="bannerWorkshop">
       <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</span><br>
@@ -104,7 +104,7 @@
       <div class="grid-six">
 
         <div class="box20">
-            <img src="img/galleryArtist2.png" alt="Alex Perez" class="exampleArtistWorkshop">
+            <img src="img/galleryArtist4.png" alt="Alex Perez" class="exampleArtistWorkshop">
               <div class="bookings">
                   <h2 class="workshop">Book 'In conversation' with Morag Macleish<i class="material-icons orangeCopy">play_arrow</i></h2>
                   <p>1900 for 1930 Fri 1 November</p>

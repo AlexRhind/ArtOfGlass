@@ -24,9 +24,9 @@
       </div>
 
       <div class="box12">
-        <img src="img/galleryArtist1.png" alt="Alex Perez" class="exampleArtist">
-        <img src="img/galleryArtist4.png" alt="Alex Perez" class="exampleArtist">
-        <img src="img/galleryArtist2.png" alt="Alex Perez" class="exampleArtist">
+        <img src="img/small1.png" alt="Alex Perez" class="exampleArtist">
+        <img src="img/small4.png" alt="Alex Perez" class="exampleArtist">
+        <img src="img/small5.png" alt="Alex Perez" class="exampleArtist">
       </div>
 
       <div class="box13">

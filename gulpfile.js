@@ -44,7 +44,7 @@ function imageMin(){
 }
 
 function watch(){
-    browserSync.init({server:{baseDir:'app'}});
+    browserSync.init({server:{baseDir: 'app'});
         //watch looks at partials - full project path required unlike the generic compile!
         gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
         gulp.watch('app/img/*', imageMin);
