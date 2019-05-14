@@ -32,10 +32,10 @@ include("includes/headerNav.php");
                                 $stmt->bind_result($id, $event, $adult, $child, $meet);
                                 $stmt->execute();
 
-				  				$_SESSION["id"] = $id; //Bind the id to a global session if needed on following pages
+				  				$_SESSION["id"] = $id; //Bind the id to a global session to allow delete booking
 
                                 //Loop through the results and fetch values to create <td> row(s)
-                  echo("<table><tr><th>Event</th><th>Adult</th><th>Child</th><th>Place</th></tr>");
+                  echo("<table><tr><th>Event</th><th>Adult</th><th>Child</th><th>Place</th><th></th></tr>");
 
 				  				while ($stmt->fetch()){
 
@@ -47,13 +47,13 @@ include("includes/headerNav.php");
 									echo "<td><button><a href='deleteProcess.php?id=" . $id . "'>Delete booking</a></button><br><br>";
 									echo "</tr>";
 									}
-
+                  
                   echo "</table>";
 
                   } else { //if ($stmt == "")
 
-                                echo "There are no listings to display";
-                                echo "<a href='addListing.php'> Add a listing, " . $_SESSION["username"] . " </a>";
+                                echo "There are no bookings to display";
+                                echo "<a href='workshops.php'>Make a booking, " . $_SESSION["username"] . " </a>";
 
 				   }
 

@@ -17,7 +17,7 @@ if (isset($_POST['submitMorag'])){
 
 			if (!empty($_POST['Nov01Meet'])) {
 
-							$event = "01Nov";
+							$event = "1900 01 November";
 							$Nov01Meet = $_POST['Nov01Meet'];
 
 											if($stmt = $conn->prepare("INSERT INTO adminGoMA.sales
@@ -40,7 +40,7 @@ if (isset($_POST['submitMorag'])){
 
 				if (!empty($_POST['Nov05Child']) || !empty($_POST['Nov05Adult'])) {
 
-								$event = "05Nov";
+								$event = "1400 05 November";
 								$Nov05Child = $_POST['Nov05Child'];
 								$Nov05Adult = $_POST['Nov05Adult'];
 
@@ -70,7 +70,7 @@ if (isset($_POST['submitMorag'])){
 
 				if (!empty($_POST['Nov06Child']) || !empty($_POST['Nov06Adult'])) {
 
-								$event = "06Nov";
+								$event = "1400 06 November";
 								$Nov06Child = $_POST['Nov06Child'];
 								$Nov06Adult = $_POST['Nov06Adult'];
 
@@ -94,7 +94,7 @@ if (isset($_POST['submitMorag'])){
 
 				if (!empty($_POST['Nov13Child']) || !empty($_POST['Nov13Adult'])) {
 
-								$event = "13Nov";
+								$event = "1000 13 November";
 								$Nov13Child = $_POST['Nov13Child'];
 								$Nov13Adult = $_POST['Nov13Adult'];
 

@@ -17,7 +17,7 @@ if (isset($_POST['submitAlina'])){
 
 			if (!empty($_POST['Dec03Meet'])) {
 
-							$event = "03Dec";
+							$event = "1900 03 December";
 							$Dec03Meet = $_POST['Dec03Meet'];
 
 											if($stmt = $conn->prepare("INSERT INTO adminGoMA.sales
@@ -40,7 +40,7 @@ if (isset($_POST['submitAlina'])){
 
 				if (!empty($_POST['Dec11Child']) || !empty($_POST['Dec11Adult'])) {
 
-								$event = "11Dec";
+								$event = "1400 11 December";
 								$Dec11Child = $_POST['Dec11Child'];
 								$Dec11Adult = $_POST['Dec11Adult'];
 
@@ -70,7 +70,7 @@ if (isset($_POST['submitAlina'])){
 
 				if (!empty($_POST['Dec13Child']) || !empty($_POST['Dec13Adult'])) {
 
-								$event = "13Dec";
+								$event = "1000 13 December";
 								$Dec13Child = $_POST['Dec13Child'];
 								$Dec13Adult = $_POST['Dec13Adult'];
 
@@ -94,7 +94,7 @@ if (isset($_POST['submitAlina'])){
 
 				if (!empty($_POST['Dec17Child']) || !empty($_POST['Dec17Adult'])) {
 
-								$event = "17Dec";
+								$event = "1000 17 December";
 								$Dec17Child = $_POST['Dec17Child'];
 								$Dec17Adult = $_POST['Dec17Adult'];
 
