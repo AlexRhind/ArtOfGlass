@@ -1,7 +1,10 @@
-<?php
-    include("includes/headerNav.php");
-?>
+<?php session_start();
+	include('includes/errors.php');
+	include ('includes/headerNav.php');
 
+	$username = $_SESSION["username"];
+
+?>
 
 <main>
 
@@ -12,7 +15,7 @@
   <section class="wrapperWorkshop" style="width: 100%; background-image: url(img/glassForest1920.png)">
 
   <div class="bannerWorkshop">
-      <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</span><br>
+      <h1 class="gallery"><strong><span class="orangeCopy">Hello <?php echo $username ;?>: Friends Priority Booking is now open</span><br>
       <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
       <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
       <div>
