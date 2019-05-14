@@ -17,7 +17,6 @@ include("includes/headerNav.php");
 
 <?php
 
-    //SELECT * FROM `table` WHERE DATE(`timestamp`) = CURDATE()
 
     if(isset($_POST['selectAll'])){
 
@@ -28,8 +27,8 @@ include("includes/headerNav.php");
 										                WHERE username = ?")){
 
                                 $stmt->bind_param("s", $username); //Bind $username from input
-
                                 $stmt->bind_result($id, $event, $adult, $child, $meet);
+                                $stmt->get_result();
                                 $stmt->execute();
 
 				  				$_SESSION["id"] = $id; //Bind the id to a global session to allow delete booking
@@ -39,15 +38,34 @@ include("includes/headerNav.php");
 
 				  				while ($stmt->fetch()){
 
-									echo "<tr>";
-									echo "<td>" . $event . "</td>";
-									echo "<td>" . $adult . "</td>";
-									echo "<td>" . $child . "</td>";
-									echo "<td>" . $meet  . "</td>";
-									echo "<td><button><a href='deleteProcess.php?id=" . $id . "'>Delete booking</a></button><br><br>";
-									echo "</tr>";
-									}
-                  
+      									echo "<tr>";
+      									echo "<td>" . $event . "</td>";
+      									echo "<td>" . $adult . "</td>";
+      									echo "<td>" . $child . "</td>";
+      									echo "<td>" . $meet  . "</td>";
+      									echo "<td><a class='deleteBooking waves-effect waves-orange btn' href='deleteProcess.php?id=" . $id . "'>Delete booking</a></td>";
+      									echo "</tr>";
+									    }
+
+                  }
+
+              if($stmt = $conn->prepare("SELECT SUM(adult), SUM(child), SUM(meet)
+                                 		FROM adminGoMA.sales
+										                WHERE username = ?")){
+
+                                $stmt->bind_param("s", $username); //Bind $username from input
+                                $stmt->bind_result($sumAdult, $sumChild, $sumMeet);
+                                $stmt->get_result();
+                                $stmt->execute();
+
+                  while ($stmt->fetch()){
+
+                        echo "<td><strong>Ticket cost</strong></td>";
+                        echo "<td><strong>&pound;" . $sumAdult * 10 . "</strong></td>";
+                        echo "<td><strong>&pound;" . $sumChild * 5 . "</strong></td>";
+                        echo "<td><strong>&pound;" . $sumMeet * 10 . "</strong></td>";
+                  }
+
                   echo "</table>";
 
                   } else { //if ($stmt == "")

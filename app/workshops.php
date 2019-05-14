@@ -140,7 +140,7 @@
         <div class="box21Input">
           <form class="" action="bookingProcessMorag.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
-            <input class="noMat" name="Nov01" type="text" placeholder="No. places"/></p>
+            <input class="noMat" name="Nov01Meet" type="text" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
