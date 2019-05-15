@@ -7,25 +7,33 @@ $("#form-create").validate({
     errorClass : 'formError',
 
     rules: {
-          //Alina's rules
           //uses the name: value pair not id of the object
-            Dec11Meet: {
-                required: false,
-                maxlength: 6,
+            username: {
+                required: true,
+                minlength: 2,
+                // remote: {
+                //     url: "checkUserName.php",
+                //     type: "post",
+                //     data: {
+                //         username: function(){
+                //             return $("#form-create :input[name='username']").val();
+                //         }
+                //       }
+                //     }
             },
-            Dec11Adult: {
-                required: false,
-                maxlength: 6,
+            email: {
+                required: true,
+                email: true
             },
-            Dec13Adult: {
-                required: false,
-                maxlength: 6,
+            password: {
+                required: true,
+                minlength: 4
             },
-            Dec17Adult: {
-                required: false,
-                maxlength: 6,
-            },
-
+            repeatPassword: {
+                required: true,
+                minlength: 4,
+                equalTo: "#password"
+            }
       },
       //Custom messages
       messages: {
