@@ -33,6 +33,7 @@ nav {
 
   .nav-wrapper {
     position: relative;
+    //border: 1px solid yellow;
     height: 100%;
   }
 
@@ -59,6 +60,7 @@ nav {
   // Logo
   .brand-logo {
     position: absolute;
+    //border: 1px solid green;
     color: $navbar-font-color;
     display: inline-block;
     font-size: $navbar-brand-font-size;
@@ -109,15 +111,19 @@ nav {
 
   // Navbar Links
   ul {
-    margin: 0;
+    margin: 18px 0 0 0;
+    //border: 1px solid red;
 
     li {
-      transition: background-color .3s;
+      transition: background-color .4s;
+      //border: 1px solid green;
+      text-align: center;
+      min-width: 140px;
       float: left;
       padding: 0;
 
       &.active {
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(78, 78, 78, 0.7);
       }
     }
     a {
@@ -140,7 +146,7 @@ nav {
       }
 
       &:hover {
-        background-color: rgba(0,0,0,.1);
+        background-color: rgba(78, 78, 78, 0.7);
       }
     }
 

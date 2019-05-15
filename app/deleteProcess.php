@@ -17,7 +17,7 @@ $id = $_GET['id'];
                 $stmt->close();
 
                 //redirect user to a confirmation page
-                header("location: userAdmin.php");
+                header("location: workshops.php");
 
             }else{
 

@@ -17,7 +17,7 @@
   z-index: 9999; // TODO: Check if this doesn't break other things
   transform-origin: 0 0;
 
-
+  //#4e4e4e
   li {
     &:hover, &.active {
       background-color: $dropdown-hover-bg-color;
@@ -65,10 +65,14 @@
     text-align: left;
   }
 }
+// ul#dropdown1:hover {
+//   background-color: #4e4e4e;
+// }
 
 body.keyboard-focused {
   .dropdown-content li:focus {
-    background-color: darken($dropdown-hover-bg-color, 8%);
+    //background-color: darken($dropdown-hover-bg-color, 8%);
+    background-color: black;
   }
 }
 

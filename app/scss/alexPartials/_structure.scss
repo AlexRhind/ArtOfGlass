@@ -12,8 +12,9 @@ html {
 
 
 body {
-  height: 100vh;
-  max-width: 100%;
+  //height: 100vh;
+	max-width: 1920px;
+  //max-width: 100%;
   //overflow-x: hidden;
   //height:auto!important;
 	//border: 1px dotted black;
@@ -56,7 +57,7 @@ nav {
 }
 
 .turqBgrd {
-  @include sectionFill (20px, 0, 20px, 0, $turq)
+  @include sectionFill (20px, 0, 60px, 0, $turq)
 }
 
 .turqBgrdNoPadding {
@@ -101,7 +102,13 @@ nav {
       min-height: 70vh;
       border: 0px solid green;
 			position: relative; //parent
-}
+			//background-image: image("img/liam-martens.png");
+				> img {
+					height: auto;
+					width: 100%;
+					//max-height:600px;
+				}
+	}
 
 .banner {
       position: absolute; //child
@@ -118,10 +125,11 @@ nav {
       width: 100%;
       border: 0px solid red;
       background-color: $copyBlack70;
-      padding: 20px 0 20px 7%;
+      padding: 20px 0 20px 0;
 			z-index: 4;
-}
+		}
 
+//See Grid for banner contents
 
 .shortWidth{
       margin-right: 66%;
@@ -202,20 +210,6 @@ nav {
 	background-color: $orange15;
 }
 
-main {
-	// display: flex;
+footer.page-footer {
+	padding-top: 30px;
 }
-
-// .content {
-// 	flex: 1 0 auto; // sets a child of the body element to expand to fill the v-height (main)
-// 	align-items: center;
-
-
-
-
-
-// .flexColCenter { //centre child objects in a row
-// 	display: flex;
-// 	flex-direction: column;
-// 	justify-content: center;
-// }

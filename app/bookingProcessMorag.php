@@ -28,7 +28,7 @@ if (isset($_POST['submitMorag'])){
 																	$stmt->execute();
 																	$stmt->close();
 
-																	header("location:userAdmin.php");
+																	header("location:workshops.php");
 
 											} else {
 
@@ -58,7 +58,7 @@ if (isset($_POST['submitMorag'])){
 																	$stmt->execute();
 																	$stmt->close();
 
-																	header("location:userAdmin.php");
+																	header("location:workshops.php");
 
 											} else {
 
@@ -82,7 +82,7 @@ if (isset($_POST['submitMorag'])){
 																	$stmt->execute();
 																	$stmt->close();
 
-																	header("location:userAdmin.php");
+																	header("location:workshops.php");
 
 											} else {
 
@@ -106,7 +106,7 @@ if (isset($_POST['submitMorag'])){
 																	$stmt->execute();
 																	$stmt->close();
 
-																	header("location:userAdmin.php");
+																	header("location:workshops.php");
 
 											} else {
 

@@ -10,6 +10,9 @@
   text-transform: uppercase;
   vertical-align: middle;
   -webkit-tap-highlight-color: transparent; // Gets rid of tap active state
+      &:hover {
+        text-decoration: none;
+  }
 }
 
 // Disabled shared style
@@ -67,6 +70,7 @@
   color: $button-raised-color;
   background-color: $button-raised-background;
   text-align: center;
+  border-radius: 0;
   letter-spacing: .5px;
   @extend .z-depth-1;
   transition: background-color .2s ease-out;

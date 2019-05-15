@@ -39,10 +39,10 @@
 
       <!-- Drop down content -->
       <ul id="dropdown1" class="dropdown-content">
-        <li><a href="meetArtist-1.php">meet 1</a></li>
-        <li><a href="meetArtist-2.php">meet 2</a></li>
-        <li><a href="meetArtist-3.php">meet 3</a></li>
-        <li><a href="workshops.php">workshops</a></li>
+        <li><a href="meetArtist-1.php">Meet MarkyD</a></li>
+        <li><a href="meetArtist-2.php">Meet Morag</a></li>
+        <li><a href="meetArtist-3.php">Meet Alina</a></li>
+        <li><a href="workshops.php">Workshops</a></li>
       </ul>
 
       <nav role="navigation">
@@ -60,10 +60,10 @@
         </ul>
 
         <ul id="nav-mobile" class="sidenav">
-          <li><a href="meetArtist-1.php">meet 1</a></li>
-          <li><a href="meetArtist-2.php">meet 2</a></li>
-          <li><a href="meetArtist-3.php">meet 3</a></li>
-          <li><a href="workshops.php">workshops</a></li>
+          <li><a href="meetArtist-1.php">Meet MarkyD</a></li>
+          <li><a href="meetArtist-2.php">Meet Morag</a></li>
+          <li><a href="meetArtist-3.php">Meet Alina</a></li>
+          <li><a href="workshops.php">Workshops</a></li>
         </ul>
 
         <!-- end nav wrapper -->

@@ -10,19 +10,56 @@
 
   <!--==========================<span class="orangeCopy">|</span>
   ***** Opening intro *****
-  =========================== -->
+  =========================== style="width: 100%; background-image: url(img/glassForest1920.png-->
 
-  <section class="wrapperWorkshop" style="width: 100%; background-image: url(img/glassForest1920.png)">
+  <section class="wrapperWorkshop">
+		<img src="img/liam-martens.png" alt="Liam Martens">
+
 
   <div class="bannerWorkshop">
-      <h1 class="gallery"><strong><span class="orangeCopy">Hello <?php echo $username ;?>: Friends Priority Booking is now open</span><br>
-      <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
-      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
-      <div>
-      <h2>Book your place with our three international glass artists</h2>
-      </div>
 
-  </div>
+		<div class="workshopGrid">
+
+				<div class="boxWorkshop1">
+		      <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</strong></span><br>
+		      <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
+		      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
+
+					<?php
+					if (!isset($username)) {
+								echo "<h2><strong><span class='orangeCopy'>GoMA Friends </strong></span><br>
+								<a class='workshop' href='login.php'>Sign in</a> to book your place with our three international glass artists</h2>";
+					 }
+					 ?>
+
+				</div>
+
+
+					<?php
+					if (isset($username)) {
+							echo "<div class='boxWorkshop2'>";
+							echo "<h2 class='workshopHide orangeCopy'>GOMA Friends</h2>";
+
+							echo "<p>You are signed on as  <strong>" . $username . "</strong></p>";
+
+							echo "<form action='displayUserBookings.php' method='post'>";
+
+							echo "<input class='waves-effect waves-orange btn' type='submit' name='selectAll' value='See your bookings' />
+							</form><br>";
+
+							echo "<a class='waves-effect waves-orange btn' href='logout.php'>Log out</a>";
+
+							echo "</div>";
+					 }
+					 ?>
+
+			</div>
+
+	<!-- end workshopGrid wrapper -->
+	</div>
+
+<!-- end bannerWorkshop -->
+</div>
 </section>
 
 <?php
@@ -75,18 +112,18 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="bookingProcessMarkyD.php" method="post" enctype="multipart/form-data">
+          <form id="formMarkyD" action="bookingProcessMarkyD.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
-            <input class="noMat" name="Oct10Meet" type="text" placeholder="No. places"/></p>
+            <input class="noMat" name="Oct10Meet" type="number" min="0" max="6" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
-            <input class="noMat" name="Oct15Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Oct15Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Oct17Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Oct17Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Oct18Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Oct18Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Oct15Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Oct15Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Oct17Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Oct17Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Oct18Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Oct18Child" type="number" min="0" max="6" placeholder="No. places"/><br>
             </p>
 
             <input class="waves-effect waves-orange btn-large" type="submit" name="submitMarkyD" value="Book MarkyD" />
@@ -138,18 +175,18 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="bookingProcessMorag.php" method="post" enctype="multipart/form-data">
+          <form id="formMorag" action="bookingProcessMorag.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
-            <input class="noMat" name="Nov01Meet" type="text" placeholder="No. places"/></p>
+            <input class="noMat" name="Nov01Meet" type="number" min="0" max="6" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
-            <input class="noMat" name="Nov05Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Nov05Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Nov06Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Nov06Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Nov13Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Nov13Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov05Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Nov05Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov06Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Nov06Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Nov13Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Nov13Child" type="number" min="0" max="6" placeholder="No. places"/><br>
             </p>
 
             <input class="waves-effect waves-orange btn-large" type="submit" name="submitMorag" value="Book Morag" />
@@ -200,18 +237,18 @@
         </div>
 
         <div class="box21Input">
-          <form class="" action="bookingProcessAlina.php" method="post" enctype="multipart/form-data">
+          <form id="formAlina" action="bookingProcessAlina.php" method="post" enctype="multipart/form-data">
             <p class="#"><strong>Places</strong><br>
-            <input class="noMat" name="Dec03Meet" type="text" placeholder="No. places"/></p>
+            <input class="noMat" name="Dec03Meet" type="number" min="0" max="6" placeholder="No. places"/></p>
               <br>
 
             <p class="#"><strong>Adult<span style="margin-left: 63px">Child</span></strong><br>
-            <input class="noMat" name="Dec11Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Dec11Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Dec13Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Dec13Child" type="text" placeholder="No. places"/><br>
-            <input class="noMat" name="Dec17Adult" type="text" placeholder="No. places"/>
-              <input class="noMat child" name="Dec17Child" type="text" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec11Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Dec11Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec13Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Dec13Child" type="number" min="0" max="6" placeholder="No. places"/><br>
+            <input class="noMat" name="Dec17Adult" type="number" min="0" max="6" placeholder="No. places"/>
+              <input class="noMat child" name="Dec17Child" type="number" min="0" max="6" placeholder="No. places"/><br>
             </p>
 
             <input class="waves-effect waves-orange btn-large" type="submit" name="submitAlina" value="Book Alina" />

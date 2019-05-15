@@ -13,19 +13,28 @@ body{
 }
 
 
-li, ul {
-	font-size: 1rem;
-	margin: 0.3rem 0;
-	text-decoration: none;
+// li, ul {
+// 	font-size: 1rem;
+// 	margin: 0.3rem 0;
+// 	text-decoration: none;
+// }
+
+
+//Nav menu
+nav i.right {
+	margin: 3px 12px 0 0;
+	//border: 1px solid red;
+	line-height: 1rem;
+	display: inline-block;
+	float: none;
 }
 
+//error label
 label, .formError {
 	font-family: $secondaryFont; //Barlow semi-condensed 400 regular, 400i reg italic 600 semi-bold
 	font-size: 1rem;
 	margin: 0.3rem 0 0.3rem 10px; //10px left indent for labels
 }
-
-//error label
 
 
 //this sets the default lineheight at 1.8. Enter an optional 5th value if it needs changed
@@ -56,6 +65,8 @@ p.workshop { @include p(0, 0, 1.4rem, 0 )
 p.workshopCollapsible { @include p(0, 0, 0rem, 0 )
 		}
 
+
+//table settings copy basic para
 tr, td { @include p(0, 0, 1rem, 0 )
 		color: $copyBlack;
 		text-align: center;
@@ -70,18 +81,11 @@ th { @include p(0, 0, 1rem, 0 )
 		color: $copyBlack;
 		font-weight: 600;
 		text-align: center;
-		
+
 		&.eventHeader {
 				text-align: left;
 		}
-
 }
-
-
-// p.workshopCollapsible p::before {
-// 		content: "CONTENT ";
-// 		//content: url(img/quotes.png) "\00A0 \00A0"; /*Use escaped unicode ch for content css \00A0 is en quad &nbsp*/
-// 		}
 
 
 p.meetArtist2 { @include p(16rem, 0, 0.75rem, 0)
@@ -93,6 +97,13 @@ ul, ol, li { @include p(0, 0, 0.75rem, 0)
 
 a { @include p(0, 0, 0.75rem, 0)
 		text-decoration: none;
+				&:hover{
+				text-decoration: underline !important;
+				}
+	}
+
+a.underline { @include p(0, 0, 0.75rem, 0)
+		text-decoration: underline;
 				&:hover{
 				text-decoration: underline !important;
 				}
@@ -183,6 +194,20 @@ h1.friends {
 
 h2 {
 	@include h2(2rem, 0, 1.2rem, 0)
+
+}
+
+a.workshop {
+	@include h2(2rem, 0, 1.2rem, 0)
+	// font-size: 1.6rem;
+  // font-weight: 300;
+  // line-height: 1.45;
+	text-decoration: underline;
+			&:hover{
+			color: $orange;
+	}
+
+
 }
 
 h2.gallery {
@@ -191,6 +216,10 @@ h2.gallery {
 
 h2.workshop {
 	@include h2(1rem, 0, 0rem, 0)
+}
+
+h2.workshopHide {
+	@include h2(0rem, 0, 1.2rem, 0)
 }
 
 h2.form {

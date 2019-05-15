@@ -99,7 +99,7 @@ $button-font-size: 16px !default;
 $button-icon-font-size: 1.3rem !default;
 $button-height: 30px !default;
 $button-padding: 0 16px !default;
-$button-radius: 0px !default;
+$button-radius: 0px !important;
 
 // Disabled styles
 $button-disabled-background: #DFDFDF !default;
@@ -108,7 +108,7 @@ $button-disabled-color: #9F9F9F !default;
 // Raised buttons
 $button-raised-background: $secondary-color !default;
 $button-raised-background-hover: lighten($button-raised-background, 5%) !default;
-$button-raised-color: #fff !default;
+$button-raised-color: black !default;
 
 // Large buttons
 $button-large-font-size: 17px !default;
@@ -191,10 +191,10 @@ $timepicker-clock-plate-bg: #eee !default;
 // 9. Dropdown
 // ==========================================================================
 
-$dropdown-bg-color: #fff !default;
-$dropdown-hover-bg-color: #eee !default;
+$dropdown-bg-color: black !default;
+$dropdown-hover-bg-color: #4a4a4a !default;
 $dropdown-color: $secondary-color !default;
-$dropdown-item-height: 50px !default;
+$dropdown-item-height: 25px !default;
 
 
 // 10. Forms
