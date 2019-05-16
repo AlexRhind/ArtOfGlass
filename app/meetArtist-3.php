@@ -66,7 +66,7 @@
       </div>
 
       <!-- end grid-one -->
-      </div>
+      <!-- </div> -->
 
   </section>
 

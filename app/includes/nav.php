@@ -26,7 +26,7 @@
 
 <div class="navbar-fixed">
 
-      <nav role="navigation">
+      <nav>
         <div class="nav-wrapper">
 
           <a href="index.php" class="brand-logo"><img src="img/GoMAOnly-White.svg" alt="Gallery of Modern Art"></a>

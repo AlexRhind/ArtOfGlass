@@ -21,13 +21,13 @@
 		<div class="workshopGrid">
 
 			<div class="boxWorkshop1">
-		      <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</strong></span><br>
+		      <h1 class="gallery"><span class="orangeCopy"><strong>Friends Priority Booking now open</strong></span><br>
 		      <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
-		      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
+		      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</h1>
 
 					<?php
 					if (!isset($username)) {
-								echo "<h2><strong><span class='orangeCopy'>GoMA Friends </strong></span><br>";
+								echo "<h2><span class='orangeCopy'><strong>GoMA Friends </strong></span><br>";
 								echo "<a class='workshop' href='login.php'>Sign in</a> to book your place with our three international glass artists</h2>";
 					 }
 					 ?>
@@ -58,7 +58,7 @@
 	</div>
 
 <!-- end bannerWorkshop -->
-</div>
+<!-- </div> -->
 </section>
 
 <?php
@@ -196,9 +196,8 @@
         <!-- end div.grid-six -->
         </div>
   <!-- end collapsible 2 -->
-  </li>
+	</div>
 
-  <li>
     <div class="collapsible-header purpleRule">
 
       <div class="grid-six">

@@ -11,11 +11,11 @@
 
 <section class="parallaxWrapper">
 
-<div class="mcparallax" data-image-src="img/artOfGlass.png" data-speed="6" alt="Art of Glass"></div>
+<div class="mcparallax" data-image-src="img/artOfGlass.png" data-speed="6"></div>
 
     <div class="grid-start">
         <div class="boxStart center">
-          <img src="img/ArtOfGlassWhite.svg" style="width:250px;">
+          <img src="img/ArtOfGlassWhite.svg" style="width:250px;" alt="Art of Glass logo">
           <h1 class="center"><strong>An exhibition of glass past & present</strong><br/>
             10 September to 15 December 2019</h1>
           <h2 class="center"><span class="orangeCopy">Three exciting International glass artists</span><br/>
@@ -108,12 +108,12 @@
 
       <div class="grid-two">
           <div class="box4 center">
-            <img src="img/ArtOfGlassWhite.svg">
+            <img src="img/ArtOfGlassWhite.svg" alt="Art of Glass logo">
           </div>
 
           <div class="box5">
             <h2 class="#">Book a workshop</h2>
-            <p class="light">Sed do eiusmod tempor incididdunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
+            <p class="light">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
           </div>
 
           <div class="box6">
@@ -133,7 +133,7 @@
 
   <section class="parallaxWrapper">
 
-  <div class="mcparallax" data-image-src="img/MoMAEgypt(c)PeterRoanFlickr.png" data-speed="3" alt="MoMA Egyptian glass"></div>
+  <div class="mcparallax" data-image-src="img/MoMAEgypt(c)PeterRoanFlickr.png" data-speed="3"></div>
 
   <div class="banner">
       <h1 class="gallery"><strong>Three Millennia of glass art at GoMA</strong> <span class="orangeCopy">|</span> Egyptian and Roman glass art</h1>
@@ -173,7 +173,7 @@
           </div>
 
           <div class="box9">
-            <img src="img/ArtOfGlassWhite.svg">
+            <img src="img/ArtOfGlassWhite.svg" alt="Art of Glass logo">
           </div>
 
         <!-- end grid-three -->
@@ -189,7 +189,7 @@
 
   <section class="parallaxWrapper">
 
-  <div class="mcparallax" data-image-src="img/goma2.png" data-speed="3" alt="GoMA at Christmas"></div>
+  <div class="mcparallax" data-image-src="img/goma2.png" data-speed="3"></div>
 
   <div class="banner">
       <h1 class="friends">

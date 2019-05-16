@@ -21,10 +21,10 @@
 
   <!-- Compiled and minified CSS, GoMA CSS - some adjustments are made to $primaryColor etc to framework -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-  <link href="css/materializeGOMA.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/materializeGOMA.css" type="text/css" rel="stylesheet" media="screen"/>
 
   <!-- Override for Materialize framework -->
-  <link href="css/alex.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/alex.css" type="text/css" rel="stylesheet" media="screen"/>
 
 </head>
 
