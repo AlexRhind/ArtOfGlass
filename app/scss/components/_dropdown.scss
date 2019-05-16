@@ -60,14 +60,11 @@
     color: $off-black;
     cursor: pointer;
     min-height: $dropdown-item-height;
-    line-height: 1.5rem;
+    line-height: 1.50rem;
     width: 100%;
     text-align: left;
   }
 }
-// ul#dropdown1:hover {
-//   background-color: #4e4e4e;
-// }
 
 body.keyboard-focused {
   .dropdown-content li:focus {

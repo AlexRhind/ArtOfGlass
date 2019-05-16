@@ -204,10 +204,21 @@ nav {
   nav.nav-extended .nav-wrapper {
     min-height: $navbar-height;
   }
-  nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  nav .nav-wrapper i, nav a.sidenav-trigger i {
+    height: $navbar-height;
+    line-height: $navbar-line-height;
+    &:hover {
+      text-decoration: none !important;
+    }
+  }
+  nav, nav a.sidenav-trigger {
     height: $navbar-height;
     line-height: $navbar-line-height;
   }
+  // nav, nav .nav-wrapper i, nav a.sidenav-trigger, nav a.sidenav-trigger i {
+  //   height: $navbar-height;
+  //   line-height: $navbar-line-height;
+  // }
   .navbar-fixed {
     height: $navbar-height;
   }
