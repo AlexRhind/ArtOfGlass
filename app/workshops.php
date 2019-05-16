@@ -20,20 +20,19 @@
 
 		<div class="workshopGrid">
 
-				<div class="boxWorkshop1">
+			<div class="boxWorkshop1">
 		      <h1 class="gallery"><strong><span class="orangeCopy">Friends Priority Booking now open</strong></span><br>
 		      <i class="material-icons orangeCopy">play_arrow</i> Artist-led workshops<br>
 		      <i class="material-icons orangeCopy">play_arrow</i> In conversation with the artist</strong> </h1>
 
 					<?php
 					if (!isset($username)) {
-								echo "<h2><strong><span class='orangeCopy'>GoMA Friends </strong></span><br>
-								<a class='workshop' href='login.php'>Sign in</a> to book your place with our three international glass artists</h2>";
+								echo "<h2><strong><span class='orangeCopy'>GoMA Friends </strong></span><br>";
+								echo "<a class='workshop' href='login.php'>Sign in</a> to book your place with our three international glass artists</h2>";
 					 }
 					 ?>
 
-				</div>
-
+			</div>
 
 					<?php
 					if (isset($username)) {

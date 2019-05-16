@@ -8,6 +8,7 @@
   height: 100%;
   height: calc(100% + 60px);
   height: -moz-calc(100%); //Temporary Firefox Fix
+  padding-top: 0px;
   padding-bottom: 60px;
   background-color: $sidenav-bg-color;
   z-index: 999;
@@ -42,7 +43,7 @@
     color: $sidenav-font-color;
     display: block;
     font-size: $sidenav-font-size;
-    font-weight: 500;
+    font-weight: 400;
     height: $sidenav-item-height;
     line-height: $sidenav-line-height;
     padding: 0 ($sidenav-padding * 2);
@@ -68,9 +69,13 @@
       float: left;
       height: $sidenav-item-height;
       line-height: $sidenav-line-height;
-      margin: 0 ($sidenav-padding * 2) 0 0;
+      margin: 10px ($sidenav-padding) 0 0;
+      padding: 0 0 0 0;
       width: $sidenav-item-height / 2;
       color: rgba(0,0,0,.54);
+        &:hover {
+          background-color: none !important;
+        }
     }
   }
 
@@ -210,7 +215,7 @@
   right: 0;
   opacity: 0;
   height: 120vh;
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.1);
   z-index: 997;
   display: none;
 }

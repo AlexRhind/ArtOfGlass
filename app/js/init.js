@@ -9,20 +9,24 @@
     $('.collapsible').collapsible();
 
 
+    $('.carousel.carousel-slider').carousel({
+        fullWidth: true,
+        indicators: true
+    });
 
-    $('.carousel.carousel-slider').carousel(
-        {fullWidth: true,
-        indicators: true}
-    );
 
-
-    $(function(){
-      $('#slider').rbtSlider({
+    $('#slider').rbtSlider({
         height: '70vh',
         'dots': true,
         'arrows': true,
         'auto': 4
-      });
+    });
+
+
+    $('.sidenav').sidenav({
+        edge: 'left',
+        inDuration: 500,
+        outDuration: 300,
     });
 
 
