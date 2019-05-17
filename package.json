@@ -30,5 +30,7 @@
     "jquery-validation": "^1.19.0",
     "readable-stream": "^3.3.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "gulp": "^4.0.2"
+  }
 }

@@ -70,10 +70,9 @@
   -------------------------------->
 
   <section class="#">
-
-    <ul class="collapsible">
-
-  <li>
+		
+<ul class="collapsible">
+<li>
 
     <div class="collapsible-header smaltBlueRule">
 
@@ -159,7 +158,8 @@
     <!-- close collapsible header -->
     </div>
 
-    <div class="collapsible-body roseBRule">
+<div class="collapsible-body roseBRule">
+
       <div class="grid-six">
         <div class="box20Collapsible">
           <h2>In conversation with Morag Macleish</h2>
@@ -193,11 +193,13 @@
           </form>
         <!-- end div.box21Input -->
         </div>
-        <!-- end div.grid-six -->
-        </div>
-  <!-- end collapsible 2 -->
-	</div>
+    <!-- end div.grid-six -->
+    </div>
+<!-- end collapsible 2 -->
+</div>
 
+</li>
+<li>
     <div class="collapsible-header purpleRule">
 
       <div class="grid-six">
@@ -258,9 +260,7 @@
         </div>
     </div>
   <!-- end collapsible 3 -->
-  </li>
-
-
+</li>
 </ul>
 
 

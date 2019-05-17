@@ -5,12 +5,14 @@ const changed = require('gulp-changed');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
-//const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify');
+const pipeline = require('readable-stream').pipeline;
 
 const browserSync = require('browser-sync').create();
 reload = browserSync.reload;
 
 
+//run SASS, compile, minify, auto-prefix, write sourcemaps
 function css(){
    return gulp.src('./app/scss/**/*.scss')
           //sourcemaps allow browsers to map css origins
@@ -29,7 +31,16 @@ function css(){
           .pipe(browserSync.stream());
 }
 
+//minify JS
+function compress() {
+   return pipeline(
+          gulp.src('app/js/*.js'),
+          uglify(),
+          gulp.dest('dist')
+)}
 
+
+//process images
 function imageMin(){
     return gulp.src('app/img/*')
           //gulp-changed compares source files to existing, only updates changes
@@ -43,14 +54,17 @@ function imageMin(){
           .pipe(gulp.dest('app/img/imgMin'));
 }
 
+//Gulp watchers
 function watch(){
     browserSync.init({server: {baseDir: 'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
         gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
         gulp.watch('app/img/*', imageMin);
+        gulp.watch('app/js/*', compress);
         gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
 }
 
+module.exports.compress = compress;
 module.exports.css = css;
 module.exports.imageMin = imageMin;
 module.exports.watch = watch;

@@ -1,4 +1,5 @@
 <?php
+session_start();
 ob_start();
 
 require('includes/dbconx.php');
@@ -40,6 +41,10 @@ if(isset($_POST['submit'])){
 			   $email = $_POST['email'];
 			   $password = $_POST['password'];
 
+				 //save the new account holder's email address to pass to sendEmail.php
+				 $_SESSION["email"] = $email;
+				 $_SESSION["username"] = $username;
+
 				//Send a hashed password into the DB (bind the hashed pwd)
 	           $hashPassword = password_hash($password, PASSWORD_DEFAULT);
 
@@ -47,6 +52,8 @@ if(isset($_POST['submit'])){
                 $stmt->bind_param("sssi", $username, $email, $hashPassword, $privacy);
                 $stmt->execute();
                 $stmt->close();
+
+					include('includes/sendEmail.php');
 
 					//redirect user to a confirmation page after DB data entry
 					header("location: login.php");
