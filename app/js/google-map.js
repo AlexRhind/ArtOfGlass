@@ -22,4 +22,4 @@ function loadScript() {
 
 };
 
-window.onload = loadScript;  // on load call loadScript()
+window.onload = loadScript;  // on load call loadScript changed

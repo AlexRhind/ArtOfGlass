@@ -30,7 +30,7 @@ function css(){
               }))
           .pipe(sourcemaps.write())
           .pipe(gulp.dest('app/css'))
-          .pipe(gulp.dest('dist/css'))
+          //.pipe(gulp.dest('dist/css'))
           .pipe(browserSync.stream());
 }
 
@@ -38,19 +38,19 @@ function css(){
 function compress() {
    return pipeline(
           gulp.src('app/js/*.js'),
-          gulp.pipe(changed('app/js/*.js')),
+          //gulp.pipe(changed('app/js/*.js')),
           uglify(),
           //gulp.dest('app/js/jsMin'),
           gulp.dest('dist/js')
 )}
 
-function copyMasters (){
-    return gulp.src('app/**/*.php', '!app/index.php')
-          // .pipe(changed('app/**/*.html')),
-          .pipe(changed('app/**/*.php'))
-          .pipe(gulp.dest('app'))
-          .pipe(gulp.dest('dist'));
-}
+// function copyMasters (){
+//     return gulp.src('app/**/*.php', '!app/index.php')
+//           // .pipe(changed('app/**/*.html')),
+//           .pipe(changed('app/**/*.php'))
+//           .pipe(gulp.dest('app'))
+//           .pipe(gulp.dest('dist'));
+// }
 
 
 //process images
@@ -70,22 +70,15 @@ function imageMin(){
 
 //Gulp watchers
 function watch(){
-    browserSync.init({server: {baseDir: 'app'}});
+    //browserSync.init({server: {baseDir: 'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
-        gulp.watch([
-          'app/scss/components/**/*.scss',
-          'app/scss/alexPartials/**/*.scss'
-          ], css);
+        gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
         gulp.watch('app/img/*', imageMin);
         gulp.watch('app/js/*', compress);
-        gulp.watch([
-          'app/**/*.html',
-          'app/**/*.php'
-          ], copyMasters)
-          .on('change', browserSync.reload);
+        //gulp.watch(['app/**/*.html','app/**/*.php']).on('change', browserSync.reload);
 }
 
-module.exports.copyMasters = copyMasters;
+//module.exports.copyMasters = copyMasters;
 module.exports.compress = compress;
 module.exports.css = css;
 module.exports.imageMin = imageMin;

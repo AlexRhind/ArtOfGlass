@@ -28,7 +28,7 @@
       </div>
 
       <div class="box19">
-      <p class="#">Sed do eiuismod tempor innciidunt ut laboure et doflore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
+      <p class="#">Sed do eiuismod tempor inncidunt ut laboure et doflore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
       </div>
 
       <div class="box16"><img src="img/michael-afonso-528807-unsplash.png" alt=""></div>
