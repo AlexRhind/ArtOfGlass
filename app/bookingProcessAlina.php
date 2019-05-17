@@ -86,7 +86,7 @@ if (isset($_POST['submitAlina'])){
 
 											} else {
 
-																	//send to another page to start again
+																	//send to another page to start again plse
 																	echo ("<p>No data returned</p>");
 
 											}
