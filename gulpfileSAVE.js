@@ -1,18 +1,18 @@
 const gulp = require('gulp');
 
 const imagemin = require('gulp-imagemin');
-const uglify = require('gulp-uglify');
-const concat = require('gulp-concat');
 const changed = require('gulp-changed');
 const autoprefixer = require('gulp-autoprefixer');
 const sourcemaps = require('gulp-sourcemaps');
 const sass = require('gulp-sass');
+const uglify = require('gulp-uglify');
 const pipeline = require('readable-stream').pipeline;
 
 const browserSync = require('browser-sync').create();
 reload = browserSync.reload;
 
 
+//run SASS, compile, minify, auto-prefix, write sourcemaps
 function css(){
    return gulp.src('./app/scss/**/*.scss')
           //sourcemaps allow browsers to map css origins
@@ -27,26 +27,20 @@ function css(){
               cascade: false
               }))
           .pipe(sourcemaps.write())
-          .pipe(gulp.dest(['app/css', 'dist/css']))
+          .pipe(gulp.dest('app/css'))
           .pipe(browserSync.stream());
 }
 
-
-function toDist() {
-  return gulp.src(['app/**/*.html', 'app/**/*.php'])
-        //gulp-changed compares source files to existing, only updates changes
-        .pipe(changed(['app/**/*.html', 'app/**/*.php']))
-        .pipe(gulp.dest(['app/**/*', 'dist/**/*']));
-}
-
+//minify JS
 function compress() {
-    return pipeline(
+   return pipeline(
           gulp.src('app/js/*.js'),
           uglify(),
-          gulp.dest('dist')
-        )};
+          gulp.dest('app/js/jsMin')
+)}
 
 
+//process images
 function imageMin(){
     return gulp.src('app/img/*')
           //gulp-changed compares source files to existing, only updates changes
@@ -57,9 +51,10 @@ function imageMin(){
               imagemin.optipng({optimizationLevel:5})
           ]))
           //temporary imgMin folder - send to dist on completion
-          .pipe(gulp.dest(['app/img/imgMin', 'dist/img']));
+          .pipe(gulp.dest('app/img/imgMin'));
 }
 
+//Gulp watchers
 function watch(){
     browserSync.init({server: {baseDir: 'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
@@ -69,7 +64,6 @@ function watch(){
         gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
 }
 
-module.exports.toDist = toDist;
 module.exports.compress = compress;
 module.exports.css = css;
 module.exports.imageMin = imageMin;

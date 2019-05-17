@@ -11,6 +11,8 @@ const pipeline = require('readable-stream').pipeline;
 const browserSync = require('browser-sync').create();
 reload = browserSync.reload;
 
+//this Gulp uses multiple dest for multiple outputs
+//use gulp.dest for EACH location - does not support [arrays]/'globbing'
 
 //run SASS, compile, minify, auto-prefix, write sourcemaps
 function css(){
@@ -28,16 +30,27 @@ function css(){
               }))
           .pipe(sourcemaps.write())
           .pipe(gulp.dest('app/css'))
+          .pipe(gulp.dest('dist/css'))
           .pipe(browserSync.stream());
 }
 
-//minify JS
+//minify JS - concat is a possibility here
 function compress() {
    return pipeline(
           gulp.src('app/js/*.js'),
+          gulp.pipe(changed('app/js/*.js')),
           uglify(),
-          gulp.dest('dist')
+          //gulp.dest('app/js/jsMin'),
+          gulp.dest('dist/js')
 )}
+
+function copyMasters (){
+    return gulp.src('app/**/*.php', '!app/index.php')
+          // .pipe(changed('app/**/*.html')),
+          .pipe(changed('app/**/*.php'))
+          .pipe(gulp.dest('app'))
+          .pipe(gulp.dest('dist'));
+}
 
 
 //process images
@@ -51,20 +64,31 @@ function imageMin(){
               imagemin.optipng({optimizationLevel:5})
           ]))
           //temporary imgMin folder - send to dist on completion
-          .pipe(gulp.dest('app/img/imgMin'));
+          //.pipe(gulp.dest('app/img/imgMin'))
+          .pipe(gulp.dest('dist/img'));
 }
 
 //Gulp watchers
 function watch(){
     browserSync.init({server: {baseDir: 'app'}});
         //watch looks at partials - full project path required unlike the generic compile!
-        gulp.watch(['app/scss/components/**/*.scss','app/scss/alexPartials/**/*.scss'], css);
+        gulp.watch([
+          'app/scss/components/**/*.scss',
+          'app/scss/alexPartials/**/*.scss'
+          ], css);
         gulp.watch('app/img/*', imageMin);
         gulp.watch('app/js/*', compress);
-        gulp.watch(['app/**/*.html', 'app/**/*.php']).on('change', browserSync.reload);
+        gulp.watch([
+          'app/**/*.html',
+          'app/**/*.php'
+          ], copyMasters)
+          .on('change', browserSync.reload);
 }
 
+module.exports.copyMasters = copyMasters;
 module.exports.compress = compress;
 module.exports.css = css;
 module.exports.imageMin = imageMin;
 module.exports.watch = watch;
+
+//    return gulp.src(['app/**/*.html', 'app/**/*.php', '!index.php', '!index.html'])
