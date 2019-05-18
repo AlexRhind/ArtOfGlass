@@ -9,7 +9,7 @@ if (isset($_POST['submitAlina'])){
 
 				// if(!isset($_SESSION["username"])) {
 				// 			$username = "Anonymous";
-				// }	else {
+				// } else {
 				// 			$username = $_SESSION["username"];
 				// }
 							$username = $_SESSION["username"];

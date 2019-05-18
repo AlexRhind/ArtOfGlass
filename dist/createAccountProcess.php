@@ -22,7 +22,7 @@ if(isset($_POST['submit'])){
 
 								$result->close();
 
-								//if the DB has found a match (it's not NULL)
+								//if the DB has found a match (it's not NULL)...
 								if ($found){
 
 								header("location: createAccount.php");
@@ -53,7 +53,7 @@ if(isset($_POST['submit'])){
                 $stmt->execute();
                 $stmt->close();
 
-					include('includes/sendEmail.php');
+				//	include('includes/sendEmail.php');
 
 					//redirect user to a confirmation page after DB data entry
 					header("location: login.php");

@@ -43,6 +43,8 @@ function compress() {
           gulp.dest('dist/js')
 )}
 
+
+// send copy of master page files on change to dist
 function copyMasters (){
     return gulp.src('app/**/*.php')
           // .pipe(changed('app/**/*.html')),
@@ -53,7 +55,7 @@ function copyMasters (){
 
 //process images
 function imageMin(){
-    return gulp.src(['app/img/*.png', 'app/img/*.svg', 'app/img/*.gif'])
+    return gulp.src(['app/img/*.png', 'app/img/*.svg', 'app/img/*.gif', '!app/img/unused'])
           //options - levels 1 - 7. 5 is relatively high
           .pipe(changed('app/img'))
           .pipe(imagemin([
@@ -71,6 +73,7 @@ function watch(){
           gulp.watch('app/img/*', imageMin);
           gulp.watch('app/js/*', compress);
           gulp.watch(['app/**/*.html','app/**/*.php'], copyMasters);
+          gulp.watch('app/**/*.html').on('change', browserSync.reload);
 }
 
 
